@@ -1,0 +1,100 @@
+
+          
+          :root {
+            /* --gradient-start: #D279EE;
+            --gradient-start-text: '#D279EE';
+            --gradient-end: #F8C390;
+            --gradient-end-text: '#F8C390'; */
+        
+            --gradient-start: #5583EE;
+            --gradient-start-text: '#5583EE';
+            --gradient-end: #41D8DD;
+            --gradient-end-text: '#41D8DD';
+          }
+
+
+.loader {
+    /* background-color: #061f25;; */
+    background: linear-gradient(33deg, var(--gradient-start), var(--gradient-end));
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 1000;
+    opacity: 1;
+    top: 0;
+}
+.centre-loader{
+    display: flex;
+    justify-content: center;
+
+}
+.animated-image{
+        border: 0.5px solid #13274F;
+        width: 23rem;
+        height: 23rem;
+        display: flex;
+        background: #fff;
+        flex-direction: column;
+        border-radius: 100%;
+        justify-content: center;
+        box-shadow: 0 0 1.5rem 0.8rem #041e5b;
+        /* animation: loader-scale 2s infinite  ease-in-out; */
+
+}
+
+@keyframes loader-rotate {
+    /* 0% {
+      transform:scale(0.5);
+      opacity:0.5 ;
+
+    }
+    
+    100% {
+      transform:scale(1);
+      opacity: 0.8;
+    } */
+
+    0% {
+        transform: scale(0.95);
+        }
+        5% {
+        transform: scale(1.1);
+        }
+        39% {
+        transform: scale(0.85);
+        opacity:0.5 ;
+        }
+        45% {
+        transform: scale(1);
+        }
+        60% {
+        transform: scale(0.95);
+      
+        }
+        100% {
+        transform: scale(1);
+        }
+        }
+        
+      
+        @keyframes loader-scale {
+            0% {
+              transform: scale(0.9);
+              opacity: 0.4;
+            }
+            50% {
+              transform: scale(1.1);
+              opacity: 1;
+            }
+            100% {
+              transform: scale(0.9);
+              opacity: 0.4;
+            }
+          }
+
+
+          
+           

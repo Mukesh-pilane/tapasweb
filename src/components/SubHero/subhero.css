@@ -1,0 +1,13 @@
+.sub-hero{
+  padding: 4rem;
+  background-color: #f2f2f2;
+}
+.sub-hero-heading{
+  line-height: 100px;
+}
+
+@media(max-width:768px){
+  .sub-hero{
+    padding: 2rem;
+  }
+}

@@ -1,0 +1,206 @@
+.mobilenav-container{
+display: flex;
+justify-content: center;
+align-items: center;
+background: #222327;
+position: fixed;
+z-index: 99999999;
+right:15px;
+bottom: 0;
+}
+
+.Mobile-navigation{
+    position: relative;
+    width: 400px;
+    background: #fff;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    
+}
+.Mobile-navigation ul{
+    display: flex;
+justify-content: space-between;
+width: 90%;
+}
+
+.Mobile-navigation ul li{
+position: relative;
+width: 80px;
+height: 32px;
+z-index: 1;
+}
+.Mobile-navigation ul li a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-weight: 500;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.Mobile-navigation ul li a .item-icon{
+   position: relative;
+   display: block;
+   height: 85px;
+   font-size: 2rem;
+   transition: .5s;
+   
+color:#222327
+}
+
+.Mobile-navigation ul li.active-item a .item-icon{
+transform: translateY(-42px);
+color: #fff;
+
+}
+
+.Mobile-navigation ul li a .item-text{
+    position: absolute;
+    color: #222327;
+    font-weight: 400;
+    font-size: 1rem;
+    letter-spacing: 0.05em;
+    transition: .5s;
+    opacity: 0;
+    transform: translateY(15px);
+}
+
+.Mobile-navigation ul li.active-item a .item-text{
+   
+    opacity: 1;
+    transform: translateY(-5px);
+}
+.home-active-indicator {
+background:#fff !important;
+}
+.indicator{
+    position: absolute;
+    top: -50%;
+
+    width: 80px;
+    height: 80px;
+    background: #5583EE;
+    border-radius: 50%;
+    border: 6px solid #222327;
+    transition: .5s;
+}
+.indicator::before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: -22px;
+    width: 20px;
+    height: 20px;
+    background: transparent;
+    border-top-right-radius: 20px;
+    box-shadow: 1px -10px 0 0 #222327;
+}
+.indicator::after{
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: -22px;
+    width: 20px;
+    height: 20px;
+    background: transparent;
+    border-top-left-radius: 20px;
+    box-shadow: -1px -10px 0 0 #222327;
+}
+
+.Mobile-navigation ul li:nth-child(1).active-item ~ .indicator {
+transform: translateX(calc(-5px));
+} 
+
+.Mobile-navigation ul li:nth-child(2).active-item ~ .indicator {
+    transform: translateX(calc(68px));
+    } 
+
+
+.Mobile-navigation ul li:nth-child(3).active-item ~ .indicator {
+    transform: translateX(calc(80px*1.74));
+    } 
+
+.Mobile-navigation ul li:nth-child(4).active-item ~ .indicator {
+    transform: translateX(calc(80px*2.65));
+    } 
+
+    .Mobile-navigation ul li:nth-child(5).active-item ~ .indicator {
+        transform: translateX(calc(80px*3.53));
+        
+        } 
+        .Mobile-navigation ul li.active-item a .item-icon img{
+               
+            height: 40px;
+            width: 50px;
+                  }
+
+
+        @media screen and (max-width: 400px) {
+            .Mobile-navigation{
+                width: 320px;
+                height: 70px;
+            }
+
+            .Mobile-navigation ul li a .item-icon{
+                font-size: 1.5rem;
+                height: 80px;
+            }
+
+            .Mobile-navigation ul li a .item-text{
+                font-size: 0.8rem;
+            }
+
+            .Mobile-navigation ul li:nth-child(1).active-item ~ .indicator {
+                transform: translateX(calc(-5px));
+                } 
+                
+                .Mobile-navigation ul li:nth-child(2).active-item ~ .indicator {
+                    transform: translateX(calc(52px));
+                    } 
+                
+                
+                .Mobile-navigation ul li:nth-child(3).active-item ~ .indicator {
+                    transform: translateX(calc(80px*1.36));
+                    } 
+                
+                .Mobile-navigation ul li:nth-child(4).active-item ~ .indicator {
+                    transform: translateX(calc(80px*2.08));
+                    } 
+                
+                    .Mobile-navigation ul li:nth-child(5).active-item ~ .indicator {
+                        transform: translateX(calc(80px*2.8));
+                        
+                        } 
+                        .indicator{
+                            position: absolute;
+                            top: -50%;
+                        
+                            width: 70px;
+                            height: 70px;
+                            
+                        }
+                        .Mobile-navigation ul li.active-item a .item-icon{
+                            transform: translateY(-32px);
+                            color: #fff;
+                            
+                            }
+                            .Mobile-navigation ul li.active-item a .item-icon img{
+               
+                      height: 40px;
+                                width: 50px;
+                                transform: translateY(-8px);
+
+                            }
+
+                           
+
+        }
+        /*display now for desktop */
+        @media (min-width:760px){
+          .mobilenav-container{
+            display:none;
+          }
+        }

@@ -1,0 +1,273 @@
+
+
+.Testimonials span {
+  color: #b9b9ce;
+  font-weight: 500;
+  
+}
+
+.Testimonials {
+  background-image: url(../../assets/images/pattern-curve.svg);
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  font-family: "Inter", sans-serif;
+  padding: 4rem;
+  
+}
+
+.Testimonials .container {
+  position: relative;
+}
+
+.Testimonials .slide{
+  display: flex;
+  
+}
+
+.testimonial {
+  background-image: url(../../assets/images/pattern-quotes.svg);
+  background-repeat: no-repeat;
+  color: #202047;
+}
+
+.text {
+  font-weight: 300;
+}
+
+.portrait {
+  border-radius: 5px;
+  box-shadow: 20px 35px 65px -50px #6c52a7;
+}
+
+.next,
+.prev {
+  border: none;
+  background: #fff;
+  position: absolute;
+}
+
+.next {
+  border-top-right-radius: 50%;
+  border-bottom-right-radius: 50%;
+}
+
+.prev {
+  border-top-left-radius: 50%;
+  border-bottom-left-radius: 50%;
+}
+
+.next:hover,
+.prev:hover {
+  background: #fff;
+  cursor: pointer;
+}
+
+@media (min-width: 1025px) {
+  .Testimonials {
+    background-size: 33rem;
+    padding-right: 22px;
+  }
+
+  .container {
+    align-items: center;
+    background-image: url(../../assets/images/pattern-bg.svg);
+    background-repeat: no-repeat;
+    background-position: right 12px bottom 55%;
+    background-size: 42rem;
+    display: flex;
+    margin: 0 auto;
+    padding: 66px 40px 70px 0px;
+  }
+
+ .Testimonials .slide  {
+    position: relative;
+  }
+
+  .testimonial {
+    background-position: left 22% top 78%;
+    background-size: 120px 100px;
+    height: 220px;
+    margin-right: -9rem;
+    padding-top: 160px;
+    padding-left: 30px;
+    width: 688px;
+    z-index: 9;
+  }
+
+  .photo {
+    flex: 1;
+    margin: 0 auto;
+    padding-left: 58px;
+  }
+
+  .text {
+    font-size: 32px;
+    line-height: 45px;
+    margin-bottom: 35px;
+  }
+
+  .name {
+    font-size: 20px;
+  }
+
+  .portrait {
+    height: auto;
+    width: 520px;
+  }
+
+  .next {
+    top: 493px;
+    left: 715px;
+    padding: 18px 19px 14px 22px;
+  }
+
+  .prev {
+    top: 493px;
+    left: 663px;
+    padding: 18px 22px 14px 19px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .Testimonials {
+    background-size: 550px;
+    
+  }
+
+ .Testimonials .slider {
+    width: 100%;
+  }
+
+  .Testimonials .slide {
+    flex-direction: column-reverse;
+  }
+
+  .Testimonials .testimonial {
+    background-size: 58px;
+    background-position: left 245px bottom 173px;
+    display: block;
+    height: 228px;
+    margin: 0 auto;
+    padding-top: 30px;
+    text-align: center;
+    width: 550px;
+  }
+
+  .text {
+    font-size: 18px;
+    line-height: 25px;
+    margin-bottom: 18px;
+  }
+
+  .name {
+    font-size: 15px;
+  }
+
+  span {
+    display: block;
+    line-height: 19px;
+  }
+
+  .photo {
+    background: url(../../assets/images/pattern-bg.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 327px;
+    margin: 10px auto 10px;
+    padding: 2.6em 2.3em 2.3em;
+  }
+
+  .portrait {
+    height: 253px;
+    width: 254px;
+  }
+
+  .next {
+    top: 315px;
+    left: 50%;
+    padding: 10px 13px 6px 13px;
+  }
+
+  .prev {
+    top: 315px;
+    right: 50%;
+    padding: 10px 13px 6px 13px;
+  }
+
+  button img {
+    transform: scale(0.75);
+  }
+}
+
+@media (max-width: 767px) {
+  .Testimonials {
+    background-size: 275px;
+    padding: 2rem;
+    margin-bottom: 5rem;
+  }
+  
+
+  .slider {
+    width: 100%;
+  }
+
+  .Testimonials .slide{
+    flex-direction: column-reverse;
+  }
+
+  .testimonial {
+    background-size: 58px;
+    background-position: left 127px bottom 173px;
+    display: block;
+    height: 228px;
+    margin: 0 auto;
+    padding-top: 30px;
+    text-align: center;
+    width: 311px;
+  }
+
+  .text {
+    font-size: 18px;
+    line-height: 25px;
+    margin-bottom: 18px;
+  }
+
+  .name {
+    font-size: 15px;
+  }
+
+  span {
+    display: block;
+    line-height: 19px;
+  }
+
+  .photo {
+    background: url(../../assets/images/pattern-bg.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 327px;
+    margin: 10px auto 10px;
+    padding: 2.6em 2.3em 2.3em;
+  }
+
+  .portrait {
+    width: 254px;
+    height: 253px;
+  }
+
+  .next {
+    top: 315px;
+    left: 50%;
+    padding: 10px 13px 6px 13px;
+  }
+
+  .prev {
+    top: 315px;
+    right: 50%;
+    padding: 10px 13px 6px 13px;
+  }
+
+  button img {
+    transform: scale(0.75);
+  }
+}
