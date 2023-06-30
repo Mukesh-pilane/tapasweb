@@ -1,5 +1,5 @@
 .slider-Image{
-  height: 800px;
+  height: 500px;
   width: 100%;
   position:relative;
 }
@@ -33,7 +33,7 @@
     object-position: 50% 50%;
   }
   .slider-Image{
-    height: 500px;
+    height: 400px;
   }
   .img-info{
     padding: 2rem;

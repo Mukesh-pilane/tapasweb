@@ -8,8 +8,8 @@ const SubHero = () => {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setText((prevText) => (prevText === 'Embrace wellness' ? 'Embrace Meditation' : 'Embrace wellness'));
-    }, 6000); // Adjust the interval duration according to your preference
+      setText((prevText) => (prevText === 'Meditaion Club' ? 'Fitness Club' : 'Meditaion Club'));
+    }, 5000); // Adjust the interval duration according to your preference
 
     return () => clearInterval(interval);
   }, []);
@@ -17,8 +17,9 @@ const SubHero = () => {
   return (
     <section className="sub-hero">
       <div className="container">
-        <h2 className="sub-hero-heading gradient-text">Tapas Pce-
-          <Typewriter
+        <h2 className="sub-hero-heading gradient-text">
+        <span className="tapas-pce">Tapas Pce is </span>
+ <Typewriter
             options={{
               strings: [text],
               autoStart: true,
@@ -29,11 +30,6 @@ const SubHero = () => {
             }}
           />
         </h2>
-        <p className="sub-hero-description">
-          Tapas PCE, in collaboration with Heartfulness, is a wellness and meditation club dedicated to promoting the
-          mental health and well-being of students. We believe in spreading the benefits of meditation to help students
-          combat stress and cultivate inner peace.
-        </p>
       </div>
     </section>
   );
