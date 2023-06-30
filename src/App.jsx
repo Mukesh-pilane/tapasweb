@@ -7,6 +7,7 @@ import Aboutus from './components/Aboutus';
 import Events from './components/Events';
 import Contactus from './components/Contactus';
 import Team from './components/Team';
+import Footer from './components/Footer/Footer'
 import Navbar from './components/Navbar/Navbar'
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
 
         <Route path="*"  />
     </Routes>
+    <Footer/>
 
 </BrowserRouter>
      

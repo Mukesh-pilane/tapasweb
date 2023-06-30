@@ -1,0 +1,258 @@
+.footer {
+  position: relative;
+}
+
+.wave {
+  position: absolute;
+  height: 100%;
+  z-index: -1;
+}
+.footer-section {
+  top: 100px;
+  width: 100%;
+  padding: 100px 0;
+}
+
+/* mobile devices */
+.footer .container{
+  width: 90%;
+padding-right: 15px;
+padding-left: 15px;
+margin: 0 auto;
+max-width: 540px;
+}
+/* Desktop and Tablet devices */
+@media screen and (min-width: 768px) {
+ .footer .container{
+    max-width: 1240px;
+    margin: 0 auto;
+      width: 100%;
+  }
+  .footer-cta{
+    padding-bottom: 15px !important;
+  }
+  .footer-cta-column{
+		flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+	min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+	}
+
+  
+  .copyright-text p {
+    margin: 0;
+    font-size: 14px;
+    color:#a59e9e;
+    width: 100%;
+
+  }
+  .copyright-area {
+    padding: 25px 0 !important;
+    bottom: -10px !important;
+  }
+
+  .mission-p,.vision-p {
+    width: 68%;
+ 
+  }
+
+}
+
+.footer-cta{
+  border-bottom: 1px solid #373636;
+	padding: 48px 0px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+.footer-cta-column{
+  min-height: 1px;
+	width: 100%;
+  padding:15px 15px;
+}
+.single-cta{
+  display: flex;
+  align-items: center;
+}
+
+.single-cta .cta-icons{
+  color: #04152d;
+  font-size: 30px;
+  float: left;
+
+  font-weight: 900;
+}
+
+.single-cta .cta-text{
+  padding-left: 15px;
+  display: inline-block;
+  letter-spacing: 1.1px;
+}
+
+.single-cta .cta-text h4 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+
+}
+.single-cta .cta-text span{
+  color: rgba(47, 22, 22, 0.875);
+    font-size: 15px;
+    cursor: pointer;
+}
+.single-cta .cta-text span a{
+  color: rgba(47, 22, 22, 0.875) !important;
+}
+
+.footer-widget-heading h3 {
+	color: #fff;
+	font-size: 20px;
+	font-weight: 800;
+
+	margin-bottom: 20px;
+	position: relative;
+}
+.footer-widget-heading h3:hover,.footer-social-icon:hover{
+  letter-spacing: 1.1px;
+}
+.footer-widget-heading h3::before:hover{
+ transform: scale(1);
+} 
+
+.footer-widget-heading h3::before {
+	content: "";
+	position: absolute;
+	left: 0;
+	bottom: -10px;
+	height: 3px;
+	width: 80px;
+	background: #0f0f3e;
+transform: scale(0);
+}
+
+.footer-widget ul li ,.legal-item{
+	display: inline-block;
+	width: 100%;
+	margin-bottom: 12px;
+}
+.footer-legal{
+  margin-top: 40px;
+}
+.footer-legal ul{
+  margin-bottom: 40px;
+}
+.footer-widget ul li a ,.legal-item a{
+	text-decoration: none;
+	color: #1a1919;;
+	text-transform: capitalize;
+  opacity: .8;
+}
+
+.footer-widget ul li a:hover,.legal-item a:hover {
+	color: #e3d6dbe3;
+	margin-left: 4px;
+	transition: all 0.4s ease;
+  letter-spacing: 2.4px;
+  opacity: .95;
+}
+
+.footer-social-icon {
+	color: #fefefe;
+	display: block;
+	font-size: 20px;
+	font-weight: 700;
+	font-family: 'Poppins', sans-serif;
+	margin-bottom: 20px;
+}
+
+.socialIcons {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+
+.socialIcons .icon {
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	background-color: #04152d;
+	display: flex;
+  font-size: 20px;
+	align-items: center;
+	color: #dde4e9;
+	justify-content: center;
+	cursor: pointer;
+	transition: all ease 0.3s;
+}
+
+.socialIcons .icon:hover {
+background:#dde4e9 ;
+	color: #04152d;
+  transform: scale(1.1);
+}
+.hover-underline-animation {
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+}
+.hover-underline-animation::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 3px;
+  bottom: -4px;
+  left: 0;
+  background-color:  #0f0f3e;
+  transform-origin: bottom right;
+  transition: transform 0.3s ease-out;
+}
+
+.hover-underline-animation:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+
+.footer-content {
+	position: relative;
+	z-index: 2;
+	padding-top: 26px;
+	
+	}
+  .row {
+		display: flex;
+		flex-wrap: wrap;
+		margin-right: -15px;
+		margin-left: -15px;
+
+		
+	}
+
+  .copyright-area {
+    background: #202020;
+    padding: 16px 0;
+    text-align: center;
+    bottom: -10px;
+    z-index: 9999;
+    position: absolute;
+    width: 100%;
+  }
+  .copyright-text p {
+      margin: 0;
+      font-size: 12px;
+      color:#a59e9e;
+      width: 100%;
+
+    }
+  
+
+.mission-p {
+  margin-bottom: 20px;
+  color: #0f0f3e;
+  text-align: justify;
+}

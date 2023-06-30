@@ -5,6 +5,7 @@ import slide1 from '../../assets/images/slide1.jpg';
 import slide2 from '../../assets/images/slide2.jpg';
 import slide3 from '../../assets/images/slide3.jpg';
 import slide4 from '../../assets/images/slide4.jpg';
+import { ArrowLeft } from '../../assets/AllSvg';
 import  './Slider.css'
 const Slider = () => {
   const slides = [
@@ -33,6 +34,7 @@ const Slider = () => {
                     autoPlay={true}
                     transitionTime={1000}
                     infiniteLoop={true}
+                
                     showStatus={false}
                     className="my-carousel"
                     swipeable={false}

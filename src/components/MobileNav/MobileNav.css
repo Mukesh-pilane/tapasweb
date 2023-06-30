@@ -2,28 +2,36 @@
 display: flex;
 justify-content: center;
 align-items: center;
-background: #222327;
+background: transparent;
 position: fixed;
 z-index: 99999999;
-right:15px;
-bottom: 0;
+width: 100%;
+
+bottom: 53px;
 }
+
+
 
 .Mobile-navigation{
     position: relative;
     width: 400px;
     background: #fff;
+    
     height: 80px;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 10px;
-    
+    box-shadow: rgba(0, 0, 0, 0.361) 0px 2px 8px;
 }
+
+
 .Mobile-navigation ul{
     display: flex;
 justify-content: space-between;
 width: 90%;
+
+background: transparent;
 }
 
 .Mobile-navigation ul li{
@@ -79,25 +87,26 @@ background:#fff !important;
 .indicator{
     position: absolute;
     top: -50%;
-
     width: 80px;
     height: 80px;
-    background: #5583EE;
+    background: #d4b3f5;
     border-radius: 50%;
-    border: 6px solid #222327;
+    border: 6px solid #1d1855;
     transition: .5s;
 }
 .indicator::before{
     content: '';
     position: absolute;
     top: 50%;
-    left: -22px;
+    left: -20px;
     width: 20px;
     height: 20px;
     background: transparent;
     border-top-right-radius: 20px;
-    box-shadow: 1px -10px 0 0 #222327;
+
+    box-shadow: 1px -10px 0 0 #1d1855;
 }
+
 .indicator::after{
     content: '';
     position: absolute;
@@ -107,7 +116,7 @@ background:#fff !important;
     height: 20px;
     background: transparent;
     border-top-left-radius: 20px;
-    box-shadow: -1px -10px 0 0 #222327;
+    box-shadow: -1px -10px 0 0 #1d1855;
 }
 
 .Mobile-navigation ul li:nth-child(1).active-item ~ .indicator {
@@ -199,7 +208,7 @@ transform: translateX(calc(-5px));
 
         }
         /*display now for desktop */
-        @media (min-width:760px){
+        @media (min-width:1080px){
           .mobilenav-container{
             display:none;
           }
