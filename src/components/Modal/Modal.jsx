@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import {AiOutlineClose} from "react-icons/Ai"
+import {AiOutlineClose} from "react-icons/ai"
 import './modal.css'
 const AnimatedDialog = ({ isOpen, onClose, playerComponent }) => {
   return (
