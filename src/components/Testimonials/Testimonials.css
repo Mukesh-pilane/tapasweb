@@ -191,14 +191,12 @@
 
 @media (max-width: 767px) {
   .Testimonials {
-    background-size: 275px;
-    padding: 2rem;
+    background-size: 200px;
+    padding: 2rem 0;
     margin-bottom: 5rem;
   }
 
-  .Testimonials .slider {
-    width: 100%;
-  }
+  
 
   .Testimonials .slide {
     flex-direction: column-reverse;
@@ -234,9 +232,9 @@
     background: url(../../assets/images/pattern-bg.svg);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 327px;
+    background-size: 200px;
     margin: 10px auto 10px;
-    padding: 2.6em 2.3em 2.3em;
+    padding: 0;
   }
 
   .Testimonials .portrait {

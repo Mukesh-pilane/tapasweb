@@ -59,7 +59,7 @@ nav ul li a {
   width: 100%;
 }
 
-@media (max-width:720px){
+@media (max-width:1080px){
     .navbar{
       display: none;
     }
