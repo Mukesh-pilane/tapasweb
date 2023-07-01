@@ -107,8 +107,9 @@ transform: scale(1.05);
   .img-info{
     padding: 2rem;
   }
-
-  
+  .hero-slider .scroll-section{
+    display: none;
+  }
 }
 
 .carousel.carousel-slider .control-arrow:hover {

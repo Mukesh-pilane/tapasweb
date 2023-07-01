@@ -76,7 +76,7 @@
 .card .content .details .data h3 {
   font-size: 0.85em;
   font-weight: 400;
-  opacity: 0.5;
+  opacity: 1;
   line-height: 1.2em;
   font-weight: 600;
 }
@@ -84,7 +84,8 @@
 .card .content .details .data h3 span {
   font-size: 0.85em;
   font-weight: 400;
-  opacity: 0.5;
+  opacity: 1;
+  color: #434343;
 }
 
 
@@ -96,12 +97,36 @@
   outline: none;
   font-size: 1em;
   font-weight: 500;
-  background: #5583EE;
+  background: linear-gradient(135deg,#ce9ffc 10%, #7367f0);;
   color: #fff;
   cursor: pointer;
   width: 100%;
 }
 
+.steps-btn{
+  cursor: pointer;
+  margin-top: 0rem;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.steps-btn::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: #0f0f3e;;
+  transition: width 0.3s ease;
+}
+
+.steps-btn :hover::after {
+  width: 100%;
+
+}
 @media (max-width: 767px) {
   .card-item{
     width: 450px;

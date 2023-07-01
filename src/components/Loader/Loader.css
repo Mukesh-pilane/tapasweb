@@ -15,7 +15,7 @@
 
 .loader {
     /* background-color: #061f25;; */
-    background: linear-gradient(33deg, var(--gradient-start), var(--gradient-end));
+    background: linear-gradient(33deg, #ce9ffc, #7367f0);
     width: 100vw;
     height: 100vh;
     position: fixed;
