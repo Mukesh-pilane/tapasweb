@@ -16,7 +16,7 @@ function App() {
   useEffect(() => {
     // Simulating content loading delay
     setTimeout(() => {
-      setIsLoading(false);
+      setIsLoading(true);
     }, 2500);
   }, []);
 

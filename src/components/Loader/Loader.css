@@ -96,5 +96,10 @@
           }
 
 
-          
            
+@media (max-width:500px) {
+  .animated-image{
+    width: 18rem;
+    height: 18rem;
+  }
+}
