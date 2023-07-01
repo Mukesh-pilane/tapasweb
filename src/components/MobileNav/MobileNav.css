@@ -199,7 +199,7 @@ transform: translateX(calc(-5px));
                             .Mobile-navigation ul li.active-item a .item-icon img{
                
                       height: 40px;
-                                width: 50px;
+                                width: 50px ;
                                 transform: translateY(-8px);
 
                             }
