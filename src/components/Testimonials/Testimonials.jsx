@@ -72,7 +72,7 @@ export default function Testimonials() {
 
   return (
     <div className="Testimonials">
-       <h2 className="gradient-text"> Students Testimonials</h2>
+       <h2 className="gradient-text">Testimonials</h2>
       <section className="container">
         <div className="slider">
         <div className="slide">

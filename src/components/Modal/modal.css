@@ -5,16 +5,17 @@
             right: 0;
             bottom: 0;
             background: rgba(0, 0, 0, 0.5);
+            backdrop-filter: 10px;
             display: flex;
             justify-Content: center;
             align-items: center;
-            z-index:99
+            z-index:999999999
 }
 
 .modal {
     position: relative;
               background: white;
-              padding: 20px;
+              padding: 50px;
               border-radius: 4px;
               box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
               width: 100%;
@@ -22,12 +23,36 @@
 }
 
 .modal-close-btn {
-    position: absolute;
-                top: 3px;
-                right: 3px;
-                background: none;
+                position: absolute;
+                top: 10px;
+                right: 10px;
+                background: rgb(100, 88, 238);
                 border: none;
+                border-radius: 9999px;
                 cursor: pointer;
-                color: #999;
-                font-size: 18px
+                color: #fff;
+                z-index: 9999999;
+                padding: 0.5rem 1rem;  
+                display: flex;
+                justify-content: center;
+                align-items: center; 
+}
+
+.modal-close-btn:hover{
+    background:rgb(131, 121, 241);
+    transform: scale(1.025)
+}
+
+@media (min-width: 768px) {
+    .modal{
+        width: 70%;
+        height: 70%;
+    }
+}
+
+@media (max-width: 768px) {
+    .modal{
+        padding: 20px
+    }
+    
 }

@@ -1,16 +1,21 @@
 .sub-hero{
-  padding: 4rem;
+  padding: 2rem 4rem;
   background-color: #f2f2f2;
   display: flex;
   }
 .sub-hero-heading {
   display: flex;
   align-items: center;
-  font-size: 4rem;
+  font-size: 3rem;
 }
 
 .sub-hero-heading .tapas-pce {
   margin-right: 1rem; /* Adjust the spacing between "Tapas Pce-" and the typewriter effect */
+}
+
+.sub-hero-description {
+  font-size: 1rem;
+  line-height: 24px
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
