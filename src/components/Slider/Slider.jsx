@@ -68,6 +68,7 @@ const Slider = () => {
               Text related to the image
             </h2>
           </div>
+
         </div>
       ))}
       </Carousel>

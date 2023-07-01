@@ -25,6 +25,7 @@
     color: white;
 }
 
+
 .img-info h2{
   text-shadow: 2px 2px 4px rgb(0, 0, 0, 1);
 }
@@ -32,8 +33,7 @@
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  width: 60px;
-  height: 60px;
+ 
   border: none;
   z-index: 999;
   background: none;
@@ -45,10 +45,23 @@
 
 .arrow-prev {
   left: 10px;
+  background-color: rgb(100, 88, 238);
+  padding: 0.5rem 1rem;
+  border-radius: 9999px;
+  transform: none;
+  transition: all .3s ease-in-out;
+}
+.arrow-prev:hover,.arrow-next:hover {
+transform: scale(1.05);
 }
 
 .arrow-next {
   right: 10px;
+  background-color: rgb(100, 88, 238);
+  padding: 0.5rem 1rem;
+  border-radius: 9999px;
+  transform: none;
+  transition: all .3s ease-in-out;
 }
 .hero-slider .scroll-section {
   display: flex;

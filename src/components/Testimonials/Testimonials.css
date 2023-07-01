@@ -15,6 +15,7 @@
   line-height: 4rem;
 }
 
+
 .Testimonials .container {
   position: relative;
 }
@@ -62,6 +63,8 @@
   background: #fff;
   cursor: pointer;
 }
+
+
 
 @media (min-width: 1025px) {
   .Testimonials {
