@@ -60,7 +60,7 @@ max-width: 540px;
 }
 
 .footer-cta{
-  border-bottom: 1px solid #373636;
+  border-bottom: 1px solid #5e5858;
 	padding: 48px 0px;
   display: flex;
   flex-wrap: wrap;
@@ -95,6 +95,7 @@ max-width: 540px;
 .single-cta .cta-text h4 {
   color: #fff;
   font-size: 20px;
+  font-family: SoDoSans_Semibold,Helvetica,sans-serif;
   font-weight: 600;
 
 }
@@ -111,7 +112,7 @@ max-width: 540px;
 	color: #fff;
 	font-size: 20px;
 	font-weight: 800;
-
+  font-family: SoDoSans_bold,Helvetica,sans-serif;
 	margin-bottom: 20px;
 	position: relative;
 }
@@ -255,4 +256,5 @@ background:#dde4e9 ;
   margin-bottom: 20px;
   color: #0f0f3e;
   text-align: justify;
+  
 }

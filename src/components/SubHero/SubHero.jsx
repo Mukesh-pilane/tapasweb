@@ -18,7 +18,7 @@ const SubHero = () => {
     <section className="sub-hero">
       <div className="container">
         <h2 className="sub-hero-heading gradient-text">
-        <span className="tapas-pce">Tapas Pce is </span>
+        <span className="tapas-pce" id="scroll-down">Tapas Pce is </span>
  <Typewriter
             options={{
               strings: [text],
@@ -31,7 +31,7 @@ const SubHero = () => {
           />
         </h2>
       </div>
-    </section>
+    </section >
   );
 };
 

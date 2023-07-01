@@ -66,7 +66,7 @@ const Footer = () => {
 
           <div className="footer-content ">
             <div className="row">
-              <div class="mission-vision footer-cta-column">
+              <div className="mission-vision footer-cta-column">
                 <div className='footer-widget-heading'>
                   <h3 className='hover-underline-animation'>Mission</h3>
                 </div>
@@ -102,17 +102,25 @@ const Footer = () => {
 
                   <span className='footer-social-icon hover-underline-animation'>Follow us</span>
                   <div className="socialIcons">
-
+                  <Link to={"https://www.facebook.com/profile.php?id=100092632995551&mibextid=ZbWKwL"} target="_blank">
                     <span className="icon facebook-bg">
+                 
                       <FaFacebookF />
+         
                     </span>
+                    </Link>
+                    <Link to={"https://instagram.com/tapas.pce?igshid=MzRlODBiNWFlZA=="} target="_blank">
                     <span className="icon">
+                    
                       <FaInstagram />
-                    </span>
 
+                    </span>
+                    </Link>
+                    <Link to={"https://www.linkedin.com/in/tapas-pce-ab809a1a9"} target="_blank">
                     <span className="icon">
                       <FaLinkedin />
                     </span>
+                    </Link>
                   </div>
                 </div>
                 <div className="footer-legal">

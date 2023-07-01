@@ -5,8 +5,14 @@
 
 .Testimonials {
  
-  font-family: "Inter", sans-serif;
+  font-family: SoDoSans_Semibold,Helvetica,sans-serif;
   padding: 4rem;
+}
+
+.Testimonials >h2{
+
+  font-size: 2rem;
+  line-height: 4rem;
 }
 
 .Testimonials .container {
@@ -25,6 +31,8 @@
 
 .Testimonials .text {
   font-weight: 300;
+  font-family: SoDoSans_Regular,Helvetica,sans-serif;
+
 }
 
 .Testimonials .portrait {
@@ -66,6 +74,10 @@
     margin: 0 auto;
   padding:4rem 4rem 6rem 4rem
      
+  }
+  .Testimonials >h2{
+    font-size: 3rem;
+      line-height: 8rem;
   }
 
   .Testimonials .slide {
@@ -192,7 +204,7 @@
 @media (max-width: 767px) {
   .Testimonials {
     background-size: 200px;
-    padding: 2rem 0;
+    padding: 2rem ;
     margin-bottom: 5rem;
   }
 

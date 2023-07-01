@@ -6,6 +6,7 @@
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   height: 100px;
   padding:0 4rem;
+  font-family: SoDoSans_bold,Helvetica,sans-serif;
 
   opacity: 0.7;
   backdrop-filter: 10px;

@@ -15,7 +15,7 @@ function Card(){
   
   return(
     <>
-    <div className="card-item">
+    <div className="card-item"  >
     <div className="card">
       <div className="imgBx">
       <img src={relaxation} />
@@ -37,6 +37,7 @@ function Card(){
     {/**/}
           <AnimatedDialog isOpen={isOpen} onClose={closeDialog} />
     </div>
+    
     </>
     )
 }

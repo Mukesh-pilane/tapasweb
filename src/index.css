@@ -7,7 +7,7 @@
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
+ font-family: SoDoSans_Light,Helvetica,sans-serif;
   -webkit-tap-highlight-color: transparent;
   background-color: #f2f2f2;
 }
@@ -25,3 +25,42 @@ body {
 
 
 
+@font-face {
+  font-family: SoDoSans_Black;
+  src: url(./assets/font/SoDoSans-Black.woff2) format("woff2"),url(./assets/font/SoDoSans-Black.woff) format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap
+}
+
+@font-face {
+  font-family: SoDosans_Bold;
+  src: url(./assets/font/SoDoSans-Bold.woff2) format("woff2"),url(./assets/font/SoDoSans-Bold.woff) format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap
+}
+
+@font-face {
+  font-family: SoDoSans_Light;
+  src: url(./assets/font/SoDoSans-Light.woff2) format("woff2"),url(./assets/font/SoDoSans-Light.woff) format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap
+}
+
+@font-face {
+  font-family: SoDoSans_Regular;
+  src: url(./assets/font/SoDoSans-Regular.woff2) format("woff2"),url(./assets/font/SoDoSans-Regular.woff) format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap
+}
+
+@font-face {
+  font-family: SoDoSans_Semibold;
+  src: url(./assets/font/SoDoSans-SemiBold.woff2) format("woff2"),url(./assets/font/SoDoSans-SemiBold.woff) format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap
+}

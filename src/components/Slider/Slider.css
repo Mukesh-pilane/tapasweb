@@ -28,9 +28,66 @@
 .img-info h2{
   text-shadow: 2px 2px 4px rgb(0, 0, 0, 1);
 }
+.carousel-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 60px;
+  height: 60px;
+  border: none;
+  z-index: 999;
+  background: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.arrow-prev {
+  left: 10px;
+}
+
+.arrow-next {
+  right: 10px;
+}
+.hero-slider .scroll-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 25px 0;
+  width: 100%;
+}
+.hero-slider .scroll-section .scroll-mouse {
+  width: 35px;
+  height: 60px;
+  border: 2px solid #8f85f3;
+  border-radius: 50px;
+  cursor: pointer;
+  position: relative;
+}
+
+.hero-slider .scroll-section .scroll-mouse:before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  position: absolute;
+  top: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #8f85f3;
+  border-radius: 50%;
+  opacity: 1;
+  animation: wheel 2s infinite;
+  -webkit-animation: wheel 2s infinite;
+}
+
+@keyframes wheel{
+  to{opacity:0;top:40px}
+}
 @media(max-width: 760px) {
   .slider-Image img{
     object-position: 50% 50%;
+
   }
   .slider-Image{
     height: 250px;
@@ -38,6 +95,11 @@
   .img-info{
     padding: 2rem;
   }
+
+    .carousel-arrow {
+      display: none;
+    }
+  
 }
 
 .carousel.carousel-slider .control-arrow:hover {

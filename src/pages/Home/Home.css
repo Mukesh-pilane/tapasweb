@@ -9,8 +9,74 @@
   background: #f2f2f2;
   padding: 4rem;
   }
+  .container2 >h2{
+    font-family: SoDoSans_Semibold,Helvetica,sans-serif;
+
+    font-size: 3rem;
+    line-height: 8rem;
+
+  }
+
+  .join-our-team-container{
+    padding: 80px 64px;
+    width: 100%;
+    color: rgba(255, 255, 255, 1);
+      }
   
-  
+      .join-our-team-container .bottom-image-with-text-parent  {
+        align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 80px;
+    text-align: center;
+    background: #6e66bd;;
+      }
+
+      .join-our-team-container  .title {
+        font-family: SoDoSans_Semibold,Helvetica,sans-serif;
+
+        font-size: 3rem;
+        line-height: 8rem;
+
+        line-height: 100%;
+        letter-spacing: -1px;
+      }
+      .join-our-team-container   .subtext{
+
+    font-size: 17px;
+    line-height: 160%;
+    letter-spacing: 0.25px;
+    margin-top: 12px;
+    opacity: .7;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .join-our-team-container   .join-button{
+    background-color: #000000;;
+    font-size: 17px;
+    line-height: 118%;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    align-items: center;
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    margin-bottom: 48px;
+    margin-top: 32px;
+    padding: 14px 20px;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+}
+.svg-image{
+  object-fit: contain;
+  display: block;
+  max-width: 100%;
+ height: 100%;
+}
   @media (max-width: 768px) {
           .card-container {
             flex-direction: row;
@@ -18,4 +84,38 @@
           .container2{
             padding: 2rem;
           }
+          .container2 >h2{
+            font-family: SoDoSans_Semibold,Helvetica,sans-serif;
+            font-size: 2rem;
+            line-height: 4rem;
+        
+          }
+          .join-our-team-container{
+            padding: 40px 24px;
+
+
+              }
+          .join-our-team-container  .title {
+            font-family: SoDoSans_Semibold,Helvetica,sans-serif;
+    
+            font-size: 2rem;
+            line-height: 4rem;
+            line-height: 100%;
+
+          }
+          .join-our-team-container   .subtext{
+
+            font-size: 17px;
+            line-height: 160%;
+         
+            margin-top: 12px;
+            opacity: .7;
+            padding-left: 16px;
+            padding-right: 16px;
+          }
         }
+
+        @media (min-width: 1280px) {  .join-our-team-container{
+          padding: 80px calc(50vw - 600px);
+            }
+          }
