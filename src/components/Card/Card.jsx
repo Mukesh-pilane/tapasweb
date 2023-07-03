@@ -1,14 +1,13 @@
 import React, {useState} from "react"
-import AnimatedDialog from '../Modal/Modal';
-import relaxation from '../../assets/images/relaxation.png'
+import AnimatedDialog from '../Modals/Modal';
+import SliderModal from "../Modals/SliderModal";
 import './Card.css'
-import ReactPlayer from 'react-player';
-import Carousel from "react-responsive-carousel/lib/js/components/Carousel/index";
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 
 
-function Card({img, slides, link}){
+function Card({img, heading, description, slides, link}){
   const [isOpen, setIsOpen] = useState(false);
+  const [isOpenSlider, setIsCloseSlider] = useState(false)
 
   const openDialog = () => {
     setIsOpen(true);
@@ -18,8 +17,12 @@ function Card({img, slides, link}){
     setIsOpen(false);
   };
 
-  const Slider = ()=>{
-
+  const openSliderModal = () => {
+    setIsCloseSlider(true);
+  }
+  
+    const closeSliderModal = () => {
+    setIsCloseSlider(false);
   }
   
   return(
@@ -27,31 +30,30 @@ function Card({img, slides, link}){
     <div className="card-item"  >
     <div className="card">
       <div className="imgBx">
-      <img src={relaxation} />
+      <img src={img} />
       </div>
       <div className="content">
         <div className="details">
-
-          <h2>Relaxation</h2>
+        
+          <h2>{heading}</h2>
           <div className="data">
-            <h3><span>Learning to relax is vital for well-being. It reduces tension in all parts of your body and helps you to stay balanced even in stressful situations.</span></h3>
+            <h3>{description}</h3>
             
-            <div className="steps-btn" onClick={openDialog}>
-            <h5 >steps</h5>
+            <div className="steps-container" onClick={openSliderModal}>
+              <div className="steps-btn">
+            <a >steps</a>
+              </div>
             </div>
           </div>
           <div className="actionBtn">
             <button onClick={openDialog}>How to relax</button>
             </div>
           </div>
-        </div>
+        </div> 
     </div>
     {/**/}
-          <AnimatedDialog isOpen={isOpen} onClose={closeDialog} playerComponent={<ReactPlayer
-              url="https://www.youtube.com/watch?v=gDClb-yjNdQ"
-              width="100%"
-              height="100%"
-            />} />
+          <AnimatedDialog isOpen={isOpen} onClose={closeDialog} link={link} />
+          <SliderModal isOpen={isOpenSlider} onClose={closeSliderModal} slides={slides}/>
     </div>
     
     </>

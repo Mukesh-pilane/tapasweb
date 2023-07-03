@@ -23,7 +23,7 @@
   .sub-hero-heading {
     display: flex;
     align-items: center;
-    font-size: 3.5rem;
+    font-size: 3rem;
   }
   
   .sub-hero-heading .tapas-pce {
@@ -37,10 +37,24 @@
   .sub-hero-heading {
     display: flex;
     align-items: center;
-    font-size: 2rem;
+    font-size: 1.5rem;
+  }
+  .sub-hero-description{
+    font-size: 1rem;
   }
   
   .sub-hero-heading .tapas-pce {
     margin-right: .5rem; /* Adjust the spacing between "Tapas Pce-" and the typewriter effect */
+  }
+}
+
+@media (max-width:360px) {
+  .sub-hero-heading {
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+  }
+  .sub-hero-description{
+    font-size: 1rem;
   }
 }
