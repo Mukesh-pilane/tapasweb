@@ -67,14 +67,14 @@ const Slider = () => {
   
   return (
         <div className="hero-slider">
-      <AnimatePresence >
+      <AnimatePresence  initial={false}>
         <motion.div
           className="quote-container"
           key={randomQuote}
-          initial={{ opacity: 0, y: -20 }} // Initial state
-          animate={{ opacity: 1, y: 0 }} // Animation when quote appears
-          exit={{ opacity: 0, y: 20 }} // Animation when quote disappears
-          transition={{ duration: 0.5 }} // Transition duration
+          initial={{ opacity: 0, scale: 0.8 }} // Initial state
+          animate={{ opacity: 1, scale: 1 }} // Animation when quote appears
+          exit={{ opacity: 0, scale: 0.8  }} // Animation when quote disappears
+          transition={{ duration: 0.5 , ease: 'easeOut'}} // Transition duration
           mode="out-in"
         >
           <h2 className="quote-text">
