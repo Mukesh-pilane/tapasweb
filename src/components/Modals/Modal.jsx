@@ -1,8 +1,10 @@
 import React from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import {AiOutlineClose} from "react-icons/ai"
+import ReactPlayer from 'react-player'; 
+
 import './modal.css'
-const AnimatedDialog = ({ isOpen, onClose, playerComponent }) => {
+const AnimatedDialog = ({ isOpen, onClose, link }) => {
   return (
     <AnimatePresence>
       {isOpen && (
@@ -27,10 +29,19 @@ const AnimatedDialog = ({ isOpen, onClose, playerComponent }) => {
             className='modal'
             style={{
               
-            }}
+            }} 
           >
-            
-            {playerComponent}
+              {console.log(link)}
+
+            <ReactPlayer
+            config={{
+              youtube: {
+                playerVars: { origin: "http://localhost:5173" },
+              }}}
+              url={link}
+              width="100%"
+              height="100%"
+            />
           </motion.div>
         </motion.div>
       )}

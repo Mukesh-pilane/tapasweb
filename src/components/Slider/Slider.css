@@ -107,9 +107,13 @@ transform: scale(1.05);
   .img-info{
     padding: 2rem;
   }
+  
+}
+
+@media (max-height:610px) {
   .hero-slider .scroll-section{
     display: none;
-  }
+  } 
 }
 
 .carousel.carousel-slider .control-arrow:hover {

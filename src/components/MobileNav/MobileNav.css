@@ -16,13 +16,12 @@ bottom: 53px;
     position: relative;
     width: 400px;
     background: #fff;
-    
+    top: 40px;
     height: 80px;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 10px;
-    box-shadow: rgba(0, 0, 0, 0.361) 0px 2px 8px;
+    border-radius:  0 0 10px 10px;
 }
 
 
@@ -91,36 +90,39 @@ background:#fff !important;
     height: 80px;
     background: #d4b3f5;
     border-radius: 50%;
-    border: 6px solid #1d1855;
+    border: 6px solid #04152d;
     transition: .5s;
 }
+
 .indicator::before{
     content: '';
     position: absolute;
     top: 50%;
-    left: -20px;
-    width: 20px;
+    right: 70px;
+    width: 309px;
     height: 20px;
     background: transparent;
     border-top-right-radius: 20px;
-
-    box-shadow: 1px -10px 0 0 #1d1855;
+    border-top-left-radius: 5px;
+    box-shadow: 1px -6px 0 0 #04152d;
 }
 
 .indicator::after{
     content: '';
     position: absolute;
     top: 50%;
-    right: -22px;
-    width: 20px;
+    left: 70px;
+    width: 311px;
     height: 20px;
     background: transparent;
     border-top-left-radius: 20px;
-    box-shadow: -1px -10px 0 0 #1d1855;
+    border-top-right-radius: 5px;
+    box-shadow: -1px -6px 0 0 #04152d;
 }
 
+
 .Mobile-navigation ul li:nth-child(1).active-item ~ .indicator {
-transform: translateX(calc(-5px));
+transform: translateX(calc(-4px));
 } 
 
 .Mobile-navigation ul li:nth-child(2).active-item ~ .indicator {
@@ -137,7 +139,7 @@ transform: translateX(calc(-5px));
     } 
 
     .Mobile-navigation ul li:nth-child(5).active-item ~ .indicator {
-        transform: translateX(calc(80px*3.53));
+        transform: translateX(calc(80px*3.55));
         
         } 
         .Mobile-navigation ul li.active-item a .item-icon img{
@@ -149,14 +151,29 @@ transform: translateX(calc(-5px));
 
         @media screen and (max-width: 400px) {
             .Mobile-navigation{
+                top: 50px;
                 width: 320px;
                 height: 70px;
             }
+
+            .indicator-tripper{
+                height: 110px;
+
+                width:320px
+            }
+
+            .navigation-shawdow{
+                height: 70px !important;
+                width: 320px !important;
+            }
+
 
             .Mobile-navigation ul li a .item-icon{
                 font-size: 1.5rem;
                 height: 80px;
             }
+
+
 
             .Mobile-navigation ul li a .item-text{
                 font-size: 0.8rem;
@@ -191,6 +208,13 @@ transform: translateX(calc(-5px));
                             height: 70px;
                             
                         }
+
+                        .indicator::after{
+                            left:60px
+                        }
+                        .indicator::before{
+                            right: 60px;
+                        }
                         .Mobile-navigation ul li.active-item a .item-icon{
                             transform: translateY(-32px);
                             color: #fff;
@@ -213,3 +237,21 @@ transform: translateX(calc(-5px));
             display:none;
           }
         }
+
+        
+        .indicator-tripper{
+            height: 120px;
+            overflow: hidden;
+            position: relative;
+        }
+        
+        .navigation-shawdow{
+            height: 80px;
+            width:400px;
+            position: absolute;
+            bottom: 0;
+            background-color: transparent;
+            border-radius:  0 0 10px 10px;
+            box-shadow: rgba(0, 0, 0, 0.361) 0px 2px 8px;
+        }
+        

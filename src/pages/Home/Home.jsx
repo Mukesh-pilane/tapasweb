@@ -5,6 +5,8 @@ import Testimonials from '../../components/Testimonials/Testimonials'
 import SubHero from '../../components/SubHero/SubHero'
 import { JoinTeam } from '../../assets/AllSvg';
 import './Home.css'
+
+import practices from '../../data/dailypractices';
 const Home = () => {
   return (
     <>
@@ -19,10 +21,16 @@ const Home = () => {
         <div
           className="card-container"
         >
-          <Card />
-          <Card />
-          <Card />
-          <Card />
+          {
+            practices.map((practice, index) => {
+              return(
+                <Card 
+                key={index}
+                {...practice}
+                />
+              )
+            })
+          }
         </div>
       </div>
       <div className="join-our-team-container">

@@ -15,6 +15,12 @@ const MobileNav = () => {
     }
   return (
     <div className="mobilenav-container">
+        <div className="navigation-shawdow">
+
+
+        </div>
+        <div className="indicator-tripper">
+
 <div className='Mobile-navigation'>
         <ul>
             <li className={location.pathname === "/aboutus" ? "active-item" : ""}>
@@ -52,9 +58,13 @@ const MobileNav = () => {
                 </NavLink>
 
             </li>
-            <div className={`indicator ${location.pathname === "/" ? "home-active-indicator" : ""}`}></div>
+            <div className={`indicator ${location.pathname === "/" ? "home-active-indicator" : ""}`}
+            >   
+                <div></div>
+            </div>
         </ul>
 
+    </div>
     </div>
     </div>
     
