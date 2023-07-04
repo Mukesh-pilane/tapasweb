@@ -8,6 +8,38 @@
   align-items: center;
   font-size: 3rem;
 }
+.sub-mission-heading,.sub-vision-heading{
+
+  font-family: SoDoSans_Semibold,Helvetica,sans-serif;
+
+  font-size: 2rem;
+}
+
+.sub-section2{
+  display: flex;
+  gap: 30px;
+
+}
+
+
+.container-middle {
+  display: flex;
+ text-align: center;
+  gap: 1rem;
+  position: relative;
+  padding-right: 96px;
+  padding-left: 96px;
+  counter-reset: numbers;
+}
+
+
+.container-middle .article-text{
+  font-size: 1rem;
+    line-height: 1.75rem;
+}
+.container-middle .articles{
+  width: 50%;
+}
 
 .sub-hero-heading .tapas-pce {
   margin-right: 1rem; /* Adjust the spacing between "Tapas Pce-" and the typewriter effect */
@@ -23,7 +55,17 @@
   .sub-hero-heading {
     display: flex;
     align-items: center;
-    font-size: 3rem;
+    font-size: 3.5rem;
+  }
+  .container-middle {
+
+    flex-direction: column;
+  align-items: center;
+     padding-left: 80px;
+  padding-right: 80px;
+  }
+  .container-middle .articles{
+      width: 100%;
   }
   
   .sub-hero-heading .tapas-pce {
@@ -46,15 +88,15 @@
   .sub-hero-heading .tapas-pce {
     margin-right: .5rem; /* Adjust the spacing between "Tapas Pce-" and the typewriter effect */
   }
-}
 
-@media (max-width:360px) {
-  .sub-hero-heading {
-    display: flex; 
-    align-items: center;
-    font-size: 1.2rem;
-  }
-  .sub-hero-description{
-    font-size: 1rem;
-  }
+
+.container-middle {
+  padding-right: 24px;
+  padding-left: 24px;
+  flex-direction: column;
+
+}
+.container-middle .articles{
+  width: 100%;
+}
 }
