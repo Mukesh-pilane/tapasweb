@@ -69,12 +69,12 @@ const SubHero = () => {
       </section> */}
       <article className="container-middle">
                 <div className="articles">
-                    <h2 className="sub-mission-heading gradient-text heading">Our Mission</h2>
+                    <h2 className="sub-mission-heading gradient-text ">Our Mission</h2>
                     <p className="article-text">TAPAS-PCE is a wellness and meditation club that emphasizes the well-being of student’s mental health. Here we will organize various informative sessions on topics including meditation, mental health, inner peace,etc.
                     </p>
                 </div>
                 <div className="articles">
-                    <h2 className="sub-vision-heading gradient-text heading">Our Vision</h2>
+                    <h2 className="sub-vision-heading gradient-text ">Our Vision</h2>
                     <p className="article-text">TAPAS-PCE comes under the umbrella of heartfulness, in heartfulness there are some four simple steps: relax, meditate, rejuvenate and connect.</p>
                 </div>
               
