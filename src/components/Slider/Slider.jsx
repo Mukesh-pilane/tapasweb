@@ -73,12 +73,12 @@ const Slider = () => {
           key={randomQuote}
           initial={{ opacity: 0, scale: 0.8 }} // Initial state
           animate={{ opacity: 1, scale: 1 }} // Animation when quote appears
-          exit={{ opacity: 0, scale: 0.8  }} // Animation when quote disappears
-          transition={{ duration: 0.5 , ease: 'easeOut'}} // Transition duration
+          exit={{ opacity: 0, scale: 1  }} // Animation when quote disappears
+          transition={{ duration: .5 , ease: 'easeOut'}} // Transition duration
           mode="out-in"
         >
           <h2 className="quote-text">
-            <FaQuoteLeft className="quote-icon" /> {randomQuote}
+            <FaQuoteLeft className="quote-icon" /> {randomQuote} <FaQuoteRight className="quote-icon" />
           </h2>
           <div className="star-left">
             <BsStars fontSize={21} color="#7367f0" />
