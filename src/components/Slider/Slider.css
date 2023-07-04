@@ -145,15 +145,13 @@ transform: scale(1.05);
   .arrow-prev,.arrow-next{
     display: none;
   }
-  
+  .hero-slider .scroll-section{
+    display: none;
+  } 
   
 }
 
-@media (max-height:610px) {
-  .hero-slider .scroll-section{
-    display: flex;
-  } 
-}
+
 
 .carousel.carousel-slider .control-arrow:hover {
   background-color: transparent!important;
