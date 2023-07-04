@@ -5,7 +5,7 @@ align-items: center;
 background: transparent;
 position: fixed;
 z-index: 99999999;
-width: 100%;
+width: 100vw;
 font-family: SoDoSans_Semibold,Helvetica,sans-serif;
 bottom: 53px;
 }

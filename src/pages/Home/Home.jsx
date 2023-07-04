@@ -28,13 +28,13 @@ const Home = () => {
       <div className="join-our-team-container">
       <div className="bottom-image-with-text-parent">
         <div className="title">
-          Hire from us
+         Join Our Team
         </div>
         <div className="subtext">
-          Become a partner companies and be first in line to the amazing talent that graduates from our cohorts
+        Take a deep breath, because it's time to connect with us, your ultimate meditation club. 
         </div>
         <div className="join-button">
-          Get in touch
+          Join us
         </div>
 <JoinTeam className="svg-image"/>
       </div>

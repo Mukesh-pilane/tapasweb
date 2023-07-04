@@ -20,6 +20,7 @@
     height: 100vh;
     position: fixed;
     display: flex;
+    align-items: center;
     flex-direction: column;
     justify-content: center;
     z-index: 1000;
@@ -29,6 +30,7 @@
 .centre-loader{
     display: flex;
     justify-content: center;
+
 
 }
 .animated-image{
