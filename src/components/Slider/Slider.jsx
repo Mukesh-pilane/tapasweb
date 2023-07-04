@@ -55,7 +55,6 @@ const Slider = () => {
                     className="my-carousel"
 
                     swipeable={false}
-                    animationHandler="fade"
       >
 
        {slides.map((slide) => (

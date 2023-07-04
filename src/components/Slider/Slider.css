@@ -107,14 +107,17 @@ transform: scale(1.05);
   .img-info{
     padding: 2rem;
   }
-  
-}
 
-@media (max-height:610px) {
+  .carousel-arrow{
+    display: none;
+  }
   .hero-slider .scroll-section{
     display: none;
-  }    
+  }  
 }
+
+
+
 
 .carousel.carousel-slider .control-arrow:hover {
   background-color: transparent!important;
