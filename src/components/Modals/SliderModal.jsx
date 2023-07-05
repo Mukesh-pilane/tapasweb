@@ -7,7 +7,6 @@ import Carousel from "react-responsive-carousel/lib/js/components/Carousel/index
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 
 const SliderModal = ({ isOpen, onClose, slides }) => {
-  console.log(slides);
   return (
     <AnimatePresence>
       {isOpen && (

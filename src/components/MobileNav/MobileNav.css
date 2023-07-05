@@ -7,7 +7,7 @@ position: fixed;
 z-index: 99999999;
 width: 100vw;
 font-family: SoDoSans_Semibold,Helvetica,sans-serif;
-bottom: 53px;
+bottom: 10px;
 }
 
 
@@ -255,3 +255,4 @@ transform: translateX(calc(-4px));
             box-shadow: rgba(0, 0, 0, 0.361) 0px 2px 8px;
         }
         
+    
