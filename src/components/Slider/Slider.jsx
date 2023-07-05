@@ -95,7 +95,7 @@ const Slider = () => {
          autoPlay={true}
          transitionTime={1000}
          infiniteLoop={true}
-     
+         interval={5000}
          showStatus={false}
          className="my-carousel"
          swipeable={ window.innerWidth <= 768 ? true : false}
