@@ -27,18 +27,27 @@
  text-align: center;
   gap: 1rem;
   position: relative;
-  padding-right: 96px;
-  padding-left: 96px;
-  counter-reset: numbers;
+padding: 0 4rem;
 }
 
 
 .container-middle .article-text{
   font-size: 1rem;
     line-height: 1.75rem;
+    margin-top: 10px;
 }
 .container-middle .articles{
   width: 50%;
+}
+.container-middle .articles .mission-icon img{
+  width: 50px;
+  height: 60px;
+}
+.container-middle .articles .vision-icon img{
+height: 60px;
+width: 80px;
+  
+
 }
 
 .sub-hero-heading .tapas-pce {
@@ -49,6 +58,22 @@
   font-size: 1rem;
   line-height: 24px;
   text-justify: justify;
+}
+
+.read-more-button {
+  appearance: none;
+  background: transparent;
+  color: #7367f0;
+  border: none;
+  font-family: SoDoSans_Semibold,Helvetica,sans-serif;
+  padding: 8px;
+
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.read-more-button:hover {
+transform: scale(1.1);
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {

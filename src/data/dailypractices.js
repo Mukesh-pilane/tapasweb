@@ -42,14 +42,14 @@ const practices = [
     { 
         img: meditaion,
         heading:"Meditation",
-        description:"Learning to relax is vital for well-being. It reduces tension in all parts of your body and helps you to stay balanced even in stressful situations.",
+        description:"With regular Heartfulness Meditation, your mind will become centered and shift to deeper levels of feeling, intuition and consciousness.",
         slides:[meditations0, meditations1, meditations2, meditations3, meditations4, meditations5],
         link: "https://www.youtube.com/watch?v=gDClb-yjNdQ"
     },
     { 
         img: cleaning,
         heading:"Cleaning",
-        description:"Learning to relax is vital for well-being. It reduces tension in all parts of your body and helps you to stay balanced even in stressful situations.",
+        description:"Cleaning fosters lightness of being, joy and a carefree attitude, as emotional burdens, habits, deep conditioning and complexities are removed..",
         slides:[cleanings0, cleanings1, cleanings2, cleanings3, cleanings4, cleanings5, cleanings6, cleanings7, cleanings8, cleanings9],
         link: "https://www.youtube.com/watch?v=gDClb-yjNdQ"
     }

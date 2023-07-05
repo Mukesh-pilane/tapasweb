@@ -24,6 +24,7 @@
     width: auto ;
     height: 75vh !important;
     padding-top: 2rem !important;
+    position: relative;
 }
 
 .slider-modal-container img{
@@ -91,9 +92,25 @@
     
     .slide-modal .thumbs-wrapper{
         display: block;
-        width: 100vw;
         overflow-x: scroll !important;
         overflow: scroll !important;
+        margin: 20px 0 0 0;
     }
-     
+    
   }
+
+  @media (max-width:768px) {
+    .slider-modal-container img{
+        width: 80% !important;
+        height: 70% !important;
+    }
+    .control-dots{
+        display: none !important;
+    }
+  }
+
+  .slide-modal .thumbs-wrapper .control-arrow::after, .slide-modal .thumbs-wrapper .control-arrow::before{
+    display: none !important;
+  }
+
+ 

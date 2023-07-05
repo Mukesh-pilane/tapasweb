@@ -24,7 +24,36 @@
     color: white;
 }
 
+.hero-slider .quote-container {
+  position: absolute;
 
+height:50px;
+z-index: 999;
+background:#ce9ffc;
+  padding: 31px 24px ;
+
+  display: none;
+}
+
+.hero-slider .quote-container .star-left{
+position: absolute;
+top: 2px;
+left: 2px;
+}
+.hero-slider .quote-container .star-right{
+  position: absolute;
+  bottom: 2px;
+  transform: rotate(180deg);
+  right: 2px;
+  }
+
+.hero-slider .quote-container .quote-text {
+  color: #ffffff;
+  text-align: center;
+
+  font-size: 0.75rem;
+
+}
 .img-info h2{
   text-shadow: 2px 2px 4px rgb(0, 0, 0, 1);
 }
@@ -103,19 +132,24 @@ transform: scale(1.05);
   }
   .slider-Image{
     height: 250px;
+
+
   }
   .img-info{
     padding: 2rem;
   }
-
-  .carousel-arrow{
+  .img-info h2{
+    display: none;
+  }
+ 
+  .arrow-prev,.arrow-next{
     display: none;
   }
   .hero-slider .scroll-section{
     display: none;
-  }  
+  } 
+  
 }
-
 
 
 
@@ -125,4 +159,20 @@ transform: scale(1.05);
 
 .my-carousel .carousel .control-dots {
     display: none;
+}
+
+@media(max-width: 528px) {
+  .hero-slider .quote-container{
+    display: flex;
+    width: 100%;    height: 60px;
+    align-items: center;
+
+justify-content: center;
+  }
+  .slider-Image{
+    height: 250px;
+
+margin-top: 50px;
+  }
+
 }

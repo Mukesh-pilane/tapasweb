@@ -1,10 +1,18 @@
 import React, { useEffect, useState } from 'react';
 import Typewriter from 'typewriter-effect';
-import {HiLightBulb,HiEye} from 'react-icons/hi'
+import mission from '../../assets/mission.png'
+import vision from '../../assets/vision.png'
 import './subhero.css';
 
 const SubHero = () => {
   const [text, setText] = useState('Embrace wellness');
+  const [showFullText, setShowFullText] = useState(false);
+  const isMobileView = window.innerWidth <= 768;
+  
+  const toggleTextVisibility = () => {
+    setShowFullText(!showFullText);
+  };
+
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -32,8 +40,50 @@ const SubHero = () => {
             />
           </h2>
           <p className="sub-hero-description">
-          Formed on 16 October 2019. TAPAS is a committee whose primary goal is to achieve good mental health and spirituality through heartfulness meditation. Heartfulness is a simple and subtle practice of meditation that connects each of us with the light and love in our hearts. It changes one's mind from stress to self-realization. TAPAS-PCE, in collaboration with Heartfulness, launched with the aim to spread the benefits of meditation to stressed-out students. It is a student club that emphasizes the well-being of students' mental health.</p>
-
+            {isMobileView ? (
+              <>
+                {showFullText ? (
+                    <p className="sub-hero-description">
+                    {isMobileView ? (
+                      <>
+                     {showFullText ? (
+                  <>
+                    Formed on 16 October 2019. TAPAS is a committee whose primary goal is to achieve good mental health and spirituality through heartfulness meditation. Heartfulness is a simple and subtle practice of meditation that connects each of us with the light and love in our hearts. It changes one's mind from stress to self-realization. TAPAS-PCE, in collaboration with Heartfulness, launched with the aim to spread the benefits of meditation to stressed-out students. It is a student club that emphasizes the well-being of students' mental health.{' '}
+                    <button className="read-more-button" onClick={toggleTextVisibility}>
+                      Show Less
+                    </button>
+                  </>
+                ) : (
+                  <>
+                    Formed on 16 October 2019. TAPAS is a committee whose primary goal is to achieve good mental health and spirituality through heartfulness meditation.{' '}
+                    <button className="read-more-button" onClick={toggleTextVisibility}>
+                      Show More
+                    </button>
+                  </>
+                )}
+                      </>
+                    ) : (
+                      <>
+                        Formed on 16 October 2019. TAPAS is a committee whose primary goal is to achieve good mental health and spirituality through heartfulness meditation. Heartfulness is a simple and subtle practice of meditation that connects each of us with the light and love in our hearts. It changes one's mind from stress to self-realization. TAPAS-PCE, in collaboration with Heartfulness, launched with the aim to spread the benefits of meditation to stressed-out students. It is a student club that emphasizes the well-being of students' mental health.
+                      </>
+                    )}
+                  </p>
+                ) : (
+                  <>
+                    Formed on 16 October 2019. TAPAS is a committee whose primary goal is to achieve good mental health and spirituality through heartfulness meditation.{' '}
+                    <button className="read-more-button" onClick={toggleTextVisibility}>
+                    Show More
+                    </button>
+                  </>
+                )}
+              </>
+            ) : (
+              <>
+                Formed on 16 October 2019. TAPAS is a committee whose primary goal is to achieve good mental health and spirituality through heartfulness meditation. Heartfulness is a simple and subtle practice of meditation that connects each of us with the light and love in our hearts. It changes one's mind from stress to self-realization. TAPAS-PCE, in collaboration with Heartfulness, launched with the aim to spread the benefits of meditation to stressed-out students. It is a student club that emphasizes the well-being of students' mental health.
+              </>
+            )}
+          </p>
+   
         </div>
       </section >
       {/* <section className="sub-hero" >
@@ -69,11 +119,17 @@ const SubHero = () => {
       </section> */}
       <article className="container-middle">
                 <div className="articles">
+                <div className="mission-icon">
+            <img src={mission} />
+          </div>
                     <h2 className="sub-mission-heading gradient-text ">Our Mission</h2>
                     <p className="article-text">TAPAS-PCE is a wellness and meditation club that emphasizes the well-being of student’s mental health. Here we will organize various informative sessions on topics including meditation, mental health, inner peace,etc.
                     </p>
                 </div>
                 <div className="articles">
+                <div className="vision-icon">
+                <img src={vision} />
+          </div>
                     <h2 className="sub-vision-heading gradient-text ">Our Vision</h2>
                     <p className="article-text">TAPAS-PCE comes under the umbrella of heartfulness, in heartfulness there are some four simple steps: relax, meditate, rejuvenate and connect.</p>
                 </div>
