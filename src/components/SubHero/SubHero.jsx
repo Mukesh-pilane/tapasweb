@@ -2,8 +2,9 @@ import React, { useEffect, useState } from 'react';
 import Typewriter from 'typewriter-effect';
 import mission from '../../assets/mission.png'
 import vision from '../../assets/vision.png'
+import heroMeditation from '../../assets/images/heroMeditation.png';
+import herowave from '../../assets/images/hero-wave.png'
 import './subhero.css';
-
 const SubHero = () => {
   const [text, setText] = useState('Embrace wellness');
   const [showFullText, setShowFullText] = useState(false);
@@ -25,7 +26,14 @@ const SubHero = () => {
   return (
     <>
       <section className="sub-hero">
-        <div className="container">
+      <div className="background-imgOverlay">
+       <img src={heroMeditation} alt="" />
+       </div>
+       <div className="intro">
+       <div className="backgroundwave-imgOverlay">
+       <img src={herowave} alt="" />
+       </div>
+        <div className="intro-container">
           <h2 className="sub-hero-heading gradient-text">
             <span className="tapas-pce" id="scroll-down">Tapas Pce is </span>
             <Typewriter
@@ -85,6 +93,29 @@ const SubHero = () => {
           </p>
    
         </div>
+       </div>
+       <div className="mv">
+
+        <article className="container-middle">
+                <div className="articles">
+                <div className="mission-icon">
+            <img src={mission} />
+          </div>
+                    <h2 className="sub-mission-heading gradient-text ">Our Mission</h2>
+                    <p className="article-text">TAPAS-PCE is a wellness and meditation club that emphasizes the well-being of student’s mental health. Here we will organize various informative sessions on topics including meditation, mental health, inner peace,etc.
+                    </p>
+                </div>
+                <div className="articles">
+                <div className="vision-icon">
+                <img src={vision} />
+          </div>
+                    <h2 className="sub-vision-heading gradient-text ">Our Vision</h2>
+                    <p className="article-text">TAPAS-PCE comes under the umbrella of heartfulness, in heartfulness there are some four simple steps: relax, meditate, rejuvenate and connect.</p>
+                </div>
+              
+            </article>
+       </div>
+
       </section >
       {/* <section className="sub-hero" >
         <div className="sub-section2">
@@ -117,24 +148,7 @@ const SubHero = () => {
           </div>
         </div>
       </section> */}
-      <article className="container-middle">
-                <div className="articles">
-                <div className="mission-icon">
-            <img src={mission} />
-          </div>
-                    <h2 className="sub-mission-heading gradient-text ">Our Mission</h2>
-                    <p className="article-text">TAPAS-PCE is a wellness and meditation club that emphasizes the well-being of student’s mental health. Here we will organize various informative sessions on topics including meditation, mental health, inner peace,etc.
-                    </p>
-                </div>
-                <div className="articles">
-                <div className="vision-icon">
-                <img src={vision} />
-          </div>
-                    <h2 className="sub-vision-heading gradient-text ">Our Vision</h2>
-                    <p className="article-text">TAPAS-PCE comes under the umbrella of heartfulness, in heartfulness there are some four simple steps: relax, meditate, rejuvenate and connect.</p>
-                </div>
-              
-            </article>
+
     </>
   );
 };

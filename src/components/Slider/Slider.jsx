@@ -95,11 +95,11 @@ const Slider = () => {
          autoPlay={true}
          transitionTime={1000}
          infiniteLoop={true}
-     
+         interval={2000}
          showStatus={false}
          className="my-carousel"
          swipeable={ window.innerWidth <= 768 ? true : false}
-         animationHandler={ window.innerWidth <= 768 ? none : "fade"}
+         animationHandler={ window.innerWidth <= 768 ? null : "fade"}
                     renderArrowPrev={(onClickHandler, hasPrev, label) =>
                       hasPrev && (
                         <button type="button" onClick={onClickHandler} title={label} className="carousel-arrow arrow-prev">

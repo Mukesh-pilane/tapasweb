@@ -7,6 +7,7 @@ const Navbar = () => {
   const navigate = useNavigate();
   return (
     <nav className="navbar">
+      <div className="nav__container">
       <div className="navbar-logo">
         <img src={logo} alt="Logo" onClick={() => navigate("/")} />
       </div>
@@ -16,6 +17,8 @@ const Navbar = () => {
         <li className="navbar-link"><a href="team">Team</a></li>
         <li className="navbar-link"><a href="contact">Contact</a></li>
       </ul>
+      </div>
+
     </nav>
   );
 };

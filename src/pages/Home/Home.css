@@ -4,23 +4,27 @@
   align-items: center;
   justify-content: center;
   }
-  
-  .container2{
-  background: #f2f2f2;
-  padding: 4rem;
+  .dailyPractices{
+    padding: 2rem;
   }
-  .container2 >h2{
+  .dailyPractices__container{
+  max-width: 1200px;
+  margin: auto;
+  }
+  .dailyPractices__container >h2{
     font-family: SoDoSans_Semibold,Helvetica,sans-serif;
-
-    font-size: 3rem;
+    font-size: 2.5rem;
     line-height: 8rem;
+  }
 
+  .join{
+    padding: 2rem 2rem;
   }
 
   .join-our-team-container{
-    padding: 80px 64px;
-    width: 100%;
     color: rgba(255, 255, 255, 1);
+    max-width: 1200px;
+    margin: 0 auto;
       }
   
       .join-our-team-container .bottom-image-with-text-parent  {
@@ -35,10 +39,7 @@
 
       .join-our-team-container  .title {
         font-family: SoDoSans_Semibold,Helvetica,sans-serif;
-
         font-size: 3rem;
-        line-height: 8rem;
-
         line-height: 100%;
         letter-spacing: -1px;
       }
@@ -90,11 +91,6 @@
             line-height: 4rem;
         
           }
-          .join-our-team-container{
-            padding: 40px 24px;
-
-
-              }
           .join-our-team-container  .title {
             font-family: SoDoSans_Semibold,Helvetica,sans-serif;
     
@@ -115,7 +111,9 @@
           }
         }
 
-        @media (min-width: 1280px) {  .join-our-team-container{
-          padding: 80px calc(50vw - 600px);
+        @media (min-width: 1280px) {  
+          .join,  .dailyPractices{
+          padding: 2rem 4rem
             }
+
           }
