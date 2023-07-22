@@ -97,6 +97,7 @@ const Slider = () => {
          infiniteLoop={true}
          interval={5000}
          showStatus={false}
+
          className="my-carousel"
          swipeable={ window.innerWidth <= 768 ? true : false}
          animationHandler={ window.innerWidth <= 768 ? null : "fade"}
