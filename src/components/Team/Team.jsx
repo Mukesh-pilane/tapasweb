@@ -1,13 +1,11 @@
 import React from 'react'
-import TeamSlider from '../../components/Slider/TeamSlider'
-import MainCard from '../../components/MainCardinfo/MainCard'
-import "./Team.css"
+import './Team.css'
+import MainCard from '../MainCardinfo/MainCard'
 
 const Team = () => {
   return (
-    <>
-      <TeamSlider />
-      <section className='team-main'>
+   <>
+   <section className='team-main'>
     <div className="team-container">
     <h1 className="gradient-text">Our Team</h1>
     <div className="member-info">
@@ -48,7 +46,7 @@ const Team = () => {
 
    </section>
    
-    </>
+   </>
   )
 }
 

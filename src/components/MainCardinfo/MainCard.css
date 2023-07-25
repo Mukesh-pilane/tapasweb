@@ -1,0 +1,45 @@
+.main-card {
+    text-align: center;
+    border-radius: 12px;
+    overflow: hidden;
+
+    box-shadow: 0 4px 8px rgba(113, 71, 238, 0.175);
+  }
+
+  
+
+  .main-card:hover{
+    border: 1px solid  rgba(113, 71, 238, 0.175);
+    transform: scale(1.04);
+    box-shadow: 0 8px 10px  rgba(113, 71, 238, 0.175);
+  }
+  
+  .main-card-image {
+    width: 100%;
+    min-height:300px;
+    
+    border-radius: 10px;
+    object-fit: cover;
+    display: block;
+
+  }
+  
+  .main-card-name {
+    margin-top: 0.75rem;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    font-family: SoDoSans_Semibold,Helvetica,sans-serif;
+   color:rgb(88, 98, 109);
+   text-transform: capitalize;
+  }
+  
+  .main-card-position {
+    margin-top: 5px;
+    font-size: .875rem;
+    opacity: 0.8;
+    line-height: 1.25rem;
+    color:  rgba(31, 41, 51, 0.828);
+  
+  }
+  
+  
