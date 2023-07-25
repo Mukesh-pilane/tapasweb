@@ -1,5 +1,4 @@
-
-          
+   
           :root {
             /* --gradient-start: #D279EE;
             --gradient-start-text: '#D279EE';
@@ -15,11 +14,12 @@
 
 .loader {
     /* background-color: #061f25;; */
-    background: linear-gradient(33deg, var(--gradient-start), var(--gradient-end));
+    background: linear-gradient(33deg, #ce9ffc, #7367f0);
     width: 100vw;
     height: 100vh;
     position: fixed;
     display: flex;
+    align-items: center;
     flex-direction: column;
     justify-content: center;
     z-index: 1000;
@@ -29,6 +29,7 @@
 .centre-loader{
     display: flex;
     justify-content: center;
+
 
 }
 .animated-image{
@@ -96,5 +97,10 @@
           }
 
 
-          
            
+@media (max-width:500px) {
+  .animated-image{
+    width: 18rem;
+    height: 18rem;
+  }
+}

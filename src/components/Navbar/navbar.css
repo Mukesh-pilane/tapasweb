@@ -1,15 +1,20 @@
-.navbar {
+.navbar{
+  justify-content: center;
+  align-items: center;
+  background-color: #F8E8EE;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 0 4rem;
+}
+.nav__container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #f2f2f2;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: auto;
   height: 100px;
-  padding:0 4rem;
-
+  font-family: SoDoSans_bold,Helvetica,sans-serif;
+  max-width: 1200px;
   opacity: 0.7;
   backdrop-filter: 10px;
-  
   z-index: 999
 }
 
@@ -20,13 +25,14 @@
 
 .navbar-logo > img{
   width: 100px;
+  cursor: pointer;
 }
 
 .navbar-links {
   display: flex;
   list-style: none;
-  margin: 0;
-  padding: 0;
+  gap: 30px;
+
 }
 
 .navbar-link {
@@ -37,11 +43,17 @@ nav ul li a {
   display: block;
   padding: 5px 0px;
   text-decoration: none;
-  color: grey;
+  color:  rgb(96, 82, 243);
   font-weight: 800;
   text-transform: uppercase;
   margin: 0px;
 }
+nav ul li a:hover {
+  color: #0f0f3e;
+  transform: scale(1.1);
+
+}
+
 /* Add any additional styles or modifications as needed */
 
 .navbar-link ::after {
@@ -51,12 +63,13 @@ nav ul li a {
   bottom: 0;
   width: 0;
   height: 2px;
-  background-color: grey;
+  background-color: #0f0f3e;;
   transition: width 0.3s ease;
 }
 
 .navbar-link :hover::after {
   width: 100%;
+
 }
 
 @media (max-width:1080px){

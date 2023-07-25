@@ -3,11 +3,22 @@
   font-weight: 500;
 }
 
+.Testimonial{
+  padding:2rem 4rem
+}
+
 .Testimonials {
  
-  font-family: "Inter", sans-serif;
-  padding: 4rem;
+  font-family: SoDoSans_Semibold,Helvetica,sans-serif;
+  max-width: 1200px;
 }
+
+.Testimonials >h2{
+
+  font-size: 2rem;
+  line-height: 4rem;
+}
+
 
 .Testimonials .container {
   position: relative;
@@ -25,6 +36,8 @@
 
 .Testimonials .text {
   font-weight: 300;
+  font-family: SoDoSans_Regular,Helvetica,sans-serif;
+
 }
 
 .Testimonials .portrait {
@@ -55,6 +68,8 @@
   cursor: pointer;
 }
 
+
+
 @media (min-width: 1025px) {
   .Testimonials {
     background-size: 33rem;
@@ -64,8 +79,12 @@
     background-position: right 12px bottom 55%;
     background-size: 42rem;
     margin: 0 auto;
-  padding:4rem 4rem 6rem 4rem
+  padding:4rem 4rem 6rem 0rem
      
+  }
+  .Testimonials >h2{
+    font-size: 3rem;
+      line-height: 8rem;
   }
 
   .Testimonials .slide {
@@ -81,7 +100,8 @@
     margin-right: -9rem;
     padding-top: 160px;
     padding-left: 30px;
-    width: 100%;
+    padding-right: 100px;
+    width: 80%;
     z-index: 9;
   }
 
@@ -92,8 +112,8 @@
   }
 
   .Testimonials .text {
-    font-size: 32px;
-    line-height: 45px;
+    font-size: 24px;
+    line-height: 36px;
     margin-bottom: 35px;
   }
 
@@ -190,9 +210,12 @@
 }
 
 @media (max-width: 767px) {
+  .Testimonial{
+    padding: 2rem
+  }
   .Testimonials {
     background-size: 200px;
-    padding: 2rem 0;
+    padding: 0rem ;
     margin-bottom: 5rem;
   }
 
@@ -243,13 +266,13 @@
   }
 
   .Testimonials .next {
-    top: 285px;
+    top: 245px;
     left: 50%;
     padding: 10px 13px 6px 13px;
   }
 
   .Testimonials .prev {
-    top: 285px;
+    top: 245px;
     right: 50%;
     padding: 10px 13px 6px 13px;
   }
