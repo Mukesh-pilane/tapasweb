@@ -95,7 +95,7 @@ const Slider = () => {
          autoPlay={true}
          transitionTime={1000}
          infiniteLoop={true}
-         interval={5000}
+         interval={2000}
          showStatus={false}
 
          className="my-carousel"

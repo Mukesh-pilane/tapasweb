@@ -71,9 +71,10 @@ export default function Testimonials() {
   const currentSlideData = slides[currentSlide];
 
   return (
+    <section className="Testimonial">
     <div className="Testimonials">
-       <h2 className="gradient-text">Testimonials</h2>
-      <section className="container">
+    <h2 className="gradient-text">Testimonials</h2>
+      <div className="container">
         <div className="slider">
         <div className="slide">
           <div className="testimonial">
@@ -101,8 +102,9 @@ export default function Testimonials() {
         </div>
 
         </div>
-      </section>
+      </div>
     </div>
+    </section>
   );
 }
 

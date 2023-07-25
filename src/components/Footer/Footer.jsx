@@ -28,7 +28,7 @@ const Footer = () => {
 
       <footer className="footer-section">
 
-        <div className="container ">
+        <div className="footer-container ">
           <div className="footer-cta ">
             <div className="footer-cta-column">
               <div className="single-cta">

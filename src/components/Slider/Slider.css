@@ -95,7 +95,8 @@ transform: scale(1.05);
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 25px 0;
+  background-color: #F7F0FF;
+  padding: 25px 0;
   width: 100%;
 }
 .hero-slider .scroll-section .scroll-mouse {

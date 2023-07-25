@@ -3,10 +3,14 @@
   font-weight: 500;
 }
 
+.Testimonial{
+  padding:2rem 4rem
+}
+
 .Testimonials {
  
   font-family: SoDoSans_Semibold,Helvetica,sans-serif;
-  padding: 4rem;
+  max-width: 1200px;
 }
 
 .Testimonials >h2{
@@ -75,7 +79,7 @@
     background-position: right 12px bottom 55%;
     background-size: 42rem;
     margin: 0 auto;
-  padding:4rem 4rem 6rem 4rem
+  padding:4rem 4rem 6rem 0rem
      
   }
   .Testimonials >h2{
@@ -206,9 +210,12 @@
 }
 
 @media (max-width: 767px) {
+  .Testimonial{
+    padding: 2rem
+  }
   .Testimonials {
     background-size: 200px;
-    padding: 2rem ;
+    padding: 0rem ;
     margin-bottom: 5rem;
   }
 

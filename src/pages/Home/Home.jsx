@@ -4,6 +4,7 @@ import Slider from '../../components/Slider/Slider'
 import Testimonials from '../../components/Testimonials/Testimonials'
 import SubHero from '../../components/SubHero/SubHero'
 import { JoinTeam } from '../../assets/AllSvg';
+import HomeEvent from '../../components/HomeEvent/HomeEvent';
 import './Home.css'
 
 import practices from '../../data/dailypractices';
@@ -14,25 +15,29 @@ const Home = () => {
 
       <Slider />
       <SubHero />
-      <div className="container2" >
+      <HomeEvent />
+      <section className="dailyPractices">
+      <div className="dailyPractices__container" >
 
-        <h2 className="gradient-text" style={{ marginBottom: "2rem" }}
-        >Daily Practices</h2>
-        <div
-          className="card-container"
-        >
-          {
-            practices.map((practice, index) => {
-              return(
-                <Card 
-                key={index}
-                {...practice}
-                />
-              )
-            })
-          }
-        </div>
-      </div>
+<h2 className="gradient-text" style={{ marginBottom: "2rem" }}
+>Daily Practices</h2>
+<div
+  className="card-container"
+>
+  {
+    practices.map((practice, index) => {
+      return(
+        <Card 
+        key={index}
+        {...practice}
+        />
+      )
+    })
+  }
+</div>
+</div>  
+      </section>
+      <section className="join">
       <div className="join-our-team-container">
       <div className="bottom-image-with-text-parent">
         <div className="title">
@@ -47,6 +52,7 @@ const Home = () => {
 <JoinTeam className="svg-image"/>
       </div>
     </div>
+    </section>
       <Testimonials />
     </>
   )

@@ -1,13 +1,70 @@
 .sub-hero{
-  padding: 2rem 4rem;
-  background-color: #f2f2f2;
+  background-color: #F8E8EE;
   display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 150px;
+  overflow-x: hidden;
+  position: relative;
+  }
+
+  .intro{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .background-imgOverlay{
+    position: absolute;
+    z-index: 1;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .backgroundwave-imgOverlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: -10px;
+  }
+
+  .backgroundwave-imgOverlay>img{
+    width: 100%;
+    height: 100%;
+  }
+  .intro-container{
+    max-width: 1200px;  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    z-index: 99
   }
 .sub-hero-heading {
   display: flex;
   align-items: center;
-  font-size: 3rem;
+  text-align: center;
+  font-size: 2rem;
+  font-family: SoDoSans_Semibold,Helvetica,sans-serif;
 }
+.sub-hero-heading .tapas-pce {
+  margin-right: 1rem; /* Adjust the spacing between "Tapas Pce-" and the typewriter effect */
+}
+
+.sub-hero-description {
+  font-size: 1rem;
+  line-height: 24px;
+  text-align: center;
+  text-justify: justify;
+  width: 60%;
+  margin-top: 2rem;
+}
+
+
+
 .sub-mission-heading,.sub-vision-heading{
 
   font-family: SoDoSans_Semibold,Helvetica,sans-serif;
@@ -21,13 +78,17 @@
 
 }
 
-
+.mv{
+  width: 100%;
+  padding:2rem 6rem
+}
 .container-middle {
   display: flex;
  text-align: center;
   gap: 1rem;
   position: relative;
-padding: 0 4rem;
+  max-width: 1200px;
+  margin: auto;
 }
 
 
@@ -50,15 +111,8 @@ width: 80px;
 
 }
 
-.sub-hero-heading .tapas-pce {
-  margin-right: 1rem; /* Adjust the spacing between "Tapas Pce-" and the typewriter effect */
-}
 
-.sub-hero-description {
-  font-size: 1rem;
-  line-height: 24px;
-  text-justify: justify;
-}
+
 
 .read-more-button {
   appearance: none;
@@ -77,11 +131,22 @@ transform: scale(1.1);
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
+
+  .sub-hero{
+    gap: 0;
+  }
+
   .sub-hero-heading {
     display: flex;
     align-items: center;
-    font-size: 3.5rem;
+    font-size: 2rem;
   }
+  .background-imgOverlay, .backgroundwave-imgOverlay{
+    display: none
+  }
+
+
+
   .container-middle {
 
     flex-direction: column;
@@ -98,8 +163,20 @@ transform: scale(1.1);
   }
 }
 @media(max-width:768px){
+
+  .sub-hero{
+    gap: 0;
+  }
+
   .sub-hero{
     padding: 2rem;
+  }
+  .background-imgOverlay, .backgroundwave-imgOverlay{
+    display: none
+  }
+
+  .intro-container{
+    padding:0 2rem;
   }
   .sub-hero-heading {
     display: flex;
@@ -108,18 +185,23 @@ transform: scale(1.1);
   }
   .sub-hero-description{
     font-size: 1rem;
+    width: 100%;
+  }
+
+  .mv{
+    padding: 2rem 2rem
   }
   
   .sub-hero-heading .tapas-pce {
     margin-right: .5rem; /* Adjust the spacing between "Tapas Pce-" and the typewriter effect */
   }
 
-
+  .sub-mission-heading,.sub-vision-heading{
+    font-size: 1.5rem;
+  }
 .container-middle {
-  padding-right: 24px;
-  padding-left: 24px;
   flex-direction: column;
-
+  gap: 2rem;
 }
 .container-middle .articles{
   width: 100%;
