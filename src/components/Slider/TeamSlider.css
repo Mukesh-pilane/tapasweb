@@ -1,0 +1,52 @@
+.Team__slider{
+  padding:2rem 4rem;
+}
+
+.Team__slider-container{
+  width:100%;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.Team__slider-imgContainer{
+    width:100%;
+    height:500px;
+}
+.Team__slider-imgContainer > img{
+    width: 100%;
+    height: 100%;
+}
+
+.Team__slider-carousel-arrow {
+    position: absolute;
+    top: 100%;
+    transform: translateY(-50%);
+    border: none;
+    z-index: 999;
+    background: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .Team__slider-arrow-prev {
+    right: 80px;
+    background-color: rgb(100, 88, 238);
+    padding: 0.5rem 1rem;
+    border-radius: 9999px;
+    transform: none;
+    transition: all .3s ease-in-out;
+  }
+  .Team__slider-arrow-prev:hover,.Team__slider-arrow-next:hover {
+  transform: scale(1.05);
+  }
+  
+  .Team__slider-arrow-next {
+    right: 10px;
+    background-color: rgb(100, 88, 238);
+    padding: 0.5rem 1rem;
+    border-radius: 9999px;
+    transform: none;
+    transition: all .3s ease-in-out;
+  }

@@ -1,6 +1,4 @@
 import React, { useState,useEffect } from 'react';
-import Carousel from "react-responsive-carousel/lib/js/components/Carousel/index";
-import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import slide1 from '../../assets/images/slide1.jpg';
 import slide2 from '../../assets/images/slide2.jpg';
 import slide3 from '../../assets/images/slide3.jpg';
@@ -11,7 +9,10 @@ import { motion,AnimatePresence  } from 'framer-motion';
 import {BsStars} from 'react-icons/bs'
 import { FaQuoteLeft,FaQuoteRight } from 'react-icons/fa';
 import { Link } from 'react-scroll';
-const Slider = () => {
+import Slider from 'react-slick';
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+const Hero = () => {
 
   const slides = [
     {
@@ -45,6 +46,41 @@ const Slider = () => {
 
   ];
   const [randomQuote, setRandomQuote] = useState('');
+
+  
+function SampleNextArrow(props) {
+  const {onClick } = props;
+  return (
+    <button type="button" onClick={onClick} className="carousel-arrow arrow-next">
+                        < ArrowRight />
+                   </button>
+  );
+}
+
+  function SamplePrevArrow(props) {
+    const { onClick } = props;
+    return (
+      <button type="button" onClick={onClick} className="carousel-arrow arrow-prev">
+            
+           <ArrowLeft/>
+                       </button>
+    );
+  }
+
+  const settings = {
+    dots: false,
+    infinite: true,
+    fade:true,
+    autoplay: true,
+    speed: 500,
+    autoplaySpeed: 2000,
+    cssEase: "linear",
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    pauseOnHover: true,
+    nextArrow: <SampleNextArrow />,
+    prevArrow: <SamplePrevArrow />
+  };
 
   const getRandomQuote = () => {
     const randomIndex = Math.floor(Math.random() * quotes.length);
@@ -90,33 +126,9 @@ const Slider = () => {
       </AnimatePresence>
       
       
-      <Carousel
-         showThumbs={false}
-         autoPlay={true}
-         transitionTime={1000}
-         infiniteLoop={true}
-         interval={2000}
-         showStatus={false}
-         className="my-carousel"
-         swipeable={ window.innerWidth <= 768 ? true : false}
-         animationHandler={ window.innerWidth <= 768 ? null : "fade"}
-                    renderArrowPrev={(onClickHandler, hasPrev, label) =>
-                      hasPrev && (
-                        <button type="button" onClick={onClickHandler} title={label} className="carousel-arrow arrow-prev">
-            
-            <ArrowLeft/>
-                        </button>
-                      )
-                    }
-                    renderArrowNext={(onClickHandler, hasNext, label) =>
-                      hasNext && (
-                        <button type="button" onClick={onClickHandler} title={label} className="carousel-arrow arrow-next">
-                          < ArrowRight />
-                        </button>
-                      )
-                    }
-                    
-      >
+      <Slider
+        {...settings}
+              >
 
        {slides.map((slide) => (
         <div key={slide.id}>
@@ -133,7 +145,7 @@ const Slider = () => {
 
         </div>
       ))}
-      </Carousel>
+      </Slider>
       <div className="scroll-section">
       <Link
           to="scroll-down" 
@@ -148,4 +160,4 @@ const Slider = () => {
   );
 };
 
-export default Slider;
+export default Hero;
