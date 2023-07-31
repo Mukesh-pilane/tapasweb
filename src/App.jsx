@@ -4,7 +4,7 @@ import Team from './pages/Team/Team';
 import Loader from './components/Loader/Loader';
 import MobileNav from './components/MobileNav/MobileNav';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Aboutus from './components/Aboutus';
+import Aboutus from './pages/Aboutus/Aboutus';
 import Events from './components/Events';
 import Contactus from './components/Contactus';
 import Footer from './components/Footer/Footer';
