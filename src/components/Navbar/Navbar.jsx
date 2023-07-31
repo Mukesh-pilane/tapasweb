@@ -1,7 +1,7 @@
 import React from 'react';
 import './navbar.css';
 import logo from '../../assets/images/logo.png';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 const Navbar = () => {
   const navigate = useNavigate();
@@ -12,10 +12,10 @@ const Navbar = () => {
         <img src={logo} alt="Logo" onClick={() => navigate("/")} />
       </div>
       <ul className="navbar-links">
-        <li className="navbar-link"><a href="aboutus">About</a></li>
-        <li className="navbar-link"><a href="events">Events</a></li>
-        <li className="navbar-link"><a href="team">Team</a></li>
-        <li className="navbar-link"><a href="contact">Contact</a></li>
+        <li className="navbar-link"><Link to={"aboutus"}>About</Link></li>
+        <li className="navbar-link"><Link to={"events"}>Events</Link></li>
+        <li className="navbar-link"><Link to={"team"}>Team</Link></li>
+        <li className="navbar-link"><Link to={"contact"}>Contact</Link></li>
       </ul>
       </div>
 
