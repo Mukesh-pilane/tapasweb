@@ -12,7 +12,7 @@
   margin: auto;
   height: 100px;
   font-family: SoDoSans_bold,Helvetica,sans-serif;
-  max-width: 1200px;
+  max-width: 1300px;
   opacity: 0.7;
   backdrop-filter: 10px;
   z-index: 999
@@ -72,7 +72,7 @@ nav ul li a:hover {
 
 }
 
-@media (max-width:1080px){
+@media (max-width:1024px){
     .navbar{
       display: none;
     }

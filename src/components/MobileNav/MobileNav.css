@@ -232,7 +232,7 @@ transform: translateX(calc(-4px));
 
         }
         /*display now for desktop */
-        @media (min-width:1080px){
+        @media (min-width:1024px){
           .mobilenav-container{
             display:none !important;
           }

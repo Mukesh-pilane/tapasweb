@@ -10,7 +10,6 @@ import event4 from '../../assets/images/slide4.jpg';
 
 const HomeEvent = () => {
   const [activeIndex, setActiveIndex] = useState(0);
-  const sliderRef = useRef(null);
 
   const EventsData = [
     {
@@ -46,7 +45,9 @@ const HomeEvent = () => {
         <div className="homeEventCard__infoContainer">
           <h2 className="homeEventCard__infoContainer-title">{Data.title}</h2>
           <p className="homeEventCard__infoContainer-discription">{Data.description}</p>
-          
+          <div className="homeEventCard__infoContainer-btn">
+            <button>See more events</button>
+          </div>
         </div>
       </div>
     );
@@ -63,10 +64,6 @@ const HomeEvent = () => {
     slidesToShow: 1,
     slidesToScroll: 1,
     pauseOnHover: true,
-    beforeChange: (current, next) => {
-      setActiveIndex(next);
-    },
-    ref: sliderRef
   };
 
   return (

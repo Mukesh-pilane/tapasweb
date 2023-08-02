@@ -35,7 +35,7 @@ function SampleNextArrow(props) {
         infinite: true,
         fade:true,
         autoplay: true,
-        speed: 500,
+        speed: 800,
         autoplaySpeed: 2000,
         cssEase: "linear",
         slidesToShow: 1,
@@ -49,6 +49,7 @@ function SampleNextArrow(props) {
     <>
     <div className="Team__slider">
       <div className="Team__slider-container"> 
+      <p className="gradient-text">Discover the passionate individuals driving our successful events.</p>
     <Slider
     {...settings}
     >

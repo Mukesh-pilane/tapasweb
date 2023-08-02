@@ -3,6 +3,7 @@
 }
 
 .homeEventContainer{
+    width: 100%;
     max-width: 1200px;
     margin:auto
 }
@@ -16,11 +17,10 @@
 .homeEventCard{
     position:relative;
     display: flex !important;
+    width: 100%;
     height: 500px;
     border-radius: 10px !important;
     overflow: hidden !important;
-    max-width: 1200px;
-    margin: auto;
 }
 
 .homeEventCard__imgContainer{
@@ -30,7 +30,7 @@
 .homeEventCard__imgContainer > img{
     width:100%;
     height: 100%;
-  object-fit: cover;
+    object-fit: cover;
 }
 
 .homeEventCard__infoContainer{
@@ -39,6 +39,7 @@
     /* background-image: linear-gradient(to bottom,#ce9ffc 10%, #6e66bd); */
     background-color: #6e66bd;
     color: #fff;
+    position: relative;
 }
 
 .homeEventCard__infoContainer-title{
@@ -52,7 +53,27 @@
     text-justify: justify;
 }
 
-@media (max-width: 768px) {
+.homeEventCard__infoContainer-btn{
+    width: calc(100% - 64px);
+    position: absolute;
+    bottom: 32px;
+}
+
+.homeEventCard__infoContainer-btn > button{
+    padding: 10px 30px;
+    border-radius: 5px;
+    border: solid 1px #fff;
+    outline: none;
+    font-size: 1em;
+    font-weight: 500;
+    width: 100%;
+    /* background: linear-gradient(135deg,#ce9ffc 10%, #7367f0); */
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+}
+
+@media (max-width: 1024px) {
     .homeEvent{
         padding:2rem;
     }
@@ -69,11 +90,15 @@
         width: 100%;
     }
     .homeEventCard__imgContainer> img{
-        height: auto;
-        object-fit: contain;
+        width: 100%;
+        height: 400px;
     }
 
-
+    .homeEventCard__infoContainer-btn{
+        position: relative;
+        width: 100%;
+        bottom: 0
+    }
     .homeEventCard__infoContainer-title{
         font-size: 1.5rem;
     }
@@ -81,4 +106,10 @@
     .homeEventCard__infoContainer-discription{
         font-size: 1rem;
     }
+}
+
+@media (max-width: 1024px) {
+.homeEventCard__imgContainer{
+    height: 300px;
+}
 }

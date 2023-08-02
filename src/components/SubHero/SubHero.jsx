@@ -48,15 +48,17 @@ const SubHero = () => {
             />
           </h2>
           <p className="sub-hero-description">
+
             {isMobileView ? (
               <>
                 {showFullText ? (
-                    <p className="sub-hero-description">
+                    <>
                     {isMobileView ? (
                       <>
                      {showFullText ? (
                   <>
                     Formed on 16 October 2019. TAPAS is a committee whose primary goal is to achieve good mental health and spirituality through heartfulness meditation. Heartfulness is a simple and subtle practice of meditation that connects each of us with the light and love in our hearts. It changes one's mind from stress to self-realization. TAPAS-PCE, in collaboration with Heartfulness, launched with the aim to spread the benefits of meditation to stressed-out students. It is a student club that emphasizes the well-being of students' mental health.{' '}
+
                     <button className="read-more-button" onClick={toggleTextVisibility}>
                       Show Less
                     </button>
@@ -75,7 +77,7 @@ const SubHero = () => {
                         Formed on 16 October 2019. TAPAS is a committee whose primary goal is to achieve good mental health and spirituality through heartfulness meditation. Heartfulness is a simple and subtle practice of meditation that connects each of us with the light and love in our hearts. It changes one's mind from stress to self-realization. TAPAS-PCE, in collaboration with Heartfulness, launched with the aim to spread the benefits of meditation to stressed-out students. It is a student club that emphasizes the well-being of students' mental health.
                       </>
                     )}
-                  </p>
+                  </>
                 ) : (
                   <>
                     Formed on 16 October 2019. TAPAS is a committee whose primary goal is to achieve good mental health and spirituality through heartfulness meditation.{' '}
@@ -91,7 +93,6 @@ const SubHero = () => {
               </>
             )}
           </p>
-   
         </div>
        </div>
        <div className="mv">
