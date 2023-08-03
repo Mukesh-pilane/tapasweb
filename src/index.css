@@ -6,12 +6,14 @@
   text-decoration: none;
 }
 
-body {
+body{
  font-family: SoDoSans_Light,Helvetica,sans-serif;
   -webkit-tap-highlight-color: transparent;
   background-color:  #F7F0FF;
-;
-  
+}
+
+.body, html{
+  overflow-x: hidden;
 }
 
 *::-webkit-scrollbar{

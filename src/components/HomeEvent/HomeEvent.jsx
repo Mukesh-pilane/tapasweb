@@ -60,7 +60,6 @@ const HomeEvent = () => {
     speed: 500,
     arrows: false,
     cssEase: "linear",
-    centerMode: true,
     slidesToShow: 1,
     slidesToScroll: 1,
     pauseOnHover: true,

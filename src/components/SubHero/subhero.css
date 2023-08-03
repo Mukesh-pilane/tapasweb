@@ -134,6 +134,7 @@ transform: scale(1.1);
 
   .sub-hero{
     gap: 0;
+    padding: 2rem 0;
   }
 
   .sub-hero-heading {
@@ -148,7 +149,6 @@ transform: scale(1.1);
 
 
   .container-middle {
-
     flex-direction: column;
   align-items: center;
      padding-left: 80px;
@@ -176,7 +176,7 @@ transform: scale(1.1);
   }
 
   .intro-container{
-    padding:0 2rem;
+    padding:0 0rem;
   }
   .sub-hero-heading {
     display: flex;
@@ -189,7 +189,7 @@ transform: scale(1.1);
   }
 
   .mv{
-    padding: 2rem 2rem
+    padding: 2rem 0rem
   }
   
   .sub-hero-heading .tapas-pce {
