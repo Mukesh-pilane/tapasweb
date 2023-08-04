@@ -6,13 +6,13 @@ import { HiUserGroup } from 'react-icons/hi';
 import { BsChatSquare } from 'react-icons/bs';
 import { FaRegUser, FaAward } from 'react-icons/fa6';
 import { RiHomeLine } from 'react-icons/ri';
-import { motion, useViewportScroll } from 'framer-motion'
+import { motion } from 'framer-motion'
 const MobileNav = () => {
   const location = useLocation();
   const [isScrolled, setIsScrolled] = useState(true);
-  
+  const URL = import.meta.env.VITE_URL
+  console.log(URL);
   useEffect(() => {
-
     const handleScroll = () => {
         const scrollY = (window.scrollY || window.pageYOffset) + window.innerHeight+53;
         const scrollThreshold = document.documentElement.scrollHeight;
@@ -43,35 +43,35 @@ const MobileNav = () => {
 <div className='Mobile-navigation'>
 <ul>
     <li className={location.pathname === "/aboutus" ? "active-item" : ""}>
-        <NavLink to={"/aboutus"} className={({ isActive }) => `${isActive ? "active-item" : ""} `}>
+        <NavLink to={`${URL}/aboutus`} className={({ isActive }) => `${isActive ? "active-item" : ""} `}>
             <span className="item-icon"><FaRegUser/></ span>
             <span className="item-text">About</span>
         </NavLink>
 
     </li>
     <li className={location.pathname === "/events" ? "active-item" : ""}>
-    <NavLink to={"/events"} className={({ isActive }) => `${isActive ? "active-item" : ""} `}>
+    <NavLink to={`${URL}/events`} className={({ isActive }) => `${isActive ? "active-item" : ""} `}>
             <span className="item-icon"><FaAward /></span>
             <span className="item-text">Events</span>
         </NavLink>
 
     </li>
     <li  className={location.pathname === "/" ? "active-item home-active" : ""}>
-    <NavLink to={"/"} className={({ isActive }) => `${isActive ? "active-item" : ""} `}>
+    <NavLink to={`${URL}/`} className={({ isActive }) => `${isActive ? "active-item" : ""} `}>
             <span className="item-icon">{location.pathname === "/" ?<img src={logomob} alt="Logo" />:<RiHomeLine />}</span>
             <span className="item-text">Home</span>
         </NavLink>
 
     </li>
     <li className={location.pathname === "/team" ? "active-item" : ""}>
-    <NavLink to={"/team"} className={({ isActive }) => `${isActive ? "active-item" : ""} `}>
+    <NavLink to={`${URL}/team`} className={({ isActive }) => `${isActive ? "active-item" : ""} `}>
             <span className="item-icon"><HiUserGroup /></span>
             <span className="item-text">Team</span>
         </NavLink>
 
     </li>
     <li className={location.pathname === "/contact" ? "active-item" : ""}>
-    <NavLink to={"/contact"} className={({ isActive }) => `${isActive ? "active-item" : ""} `}>
+    <NavLink to={`${URL}/contact`} className={({ isActive }) => `${isActive ? "active-item" : ""} `}>
             <span className="item-icon"><BsChatSquare /></span>
             <span className="item-text">Contact</span>
         </NavLink>

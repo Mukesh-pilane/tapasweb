@@ -57,8 +57,6 @@
 
     @media (max-width: 488px) {
         .team-container .member-info{
-            grid-template-columns: repeat(1,minmax(0,1.6fr));
-            justify-items: center;
-    
+            grid-template-columns: repeat(1,minmax(0,1fr));
         }
     }

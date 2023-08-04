@@ -20,6 +20,8 @@ function App() {
     }, 2500);
   }, []);
 
+  const URL = import.meta.env.VITE_URL
+
   return (
     <div className="App">
       {isLoading ? (
@@ -30,8 +32,8 @@ function App() {
             <Navbar />
             <MobileNav />
             <Routes>
-              <Route path="/" element={<Home />} />
-              <Route path='/aboutus' element={<Aboutus />} />
+              <Route index element={<Home />} />
+              <Route path={'/aboutus'} element={<Aboutus />} />
               <Route path='/events' element={<Events />} />
               <Route path="/contact" element={<Contactus />} />
               <Route path="/team" element={<Team />} />
