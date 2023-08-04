@@ -66,15 +66,17 @@
   }
 
   .Team__slider-container >p{
-    font-size: 2rem;
+    font-size: 1.5rem !important;
   }
 
   
   .Team__slider-imgContainer{
     height: 220px;
   }
-  
 
+  .Team__slider-imgContainer{
+    height: 250px !important;
+  }
   }
 
   @media screen and (max-width: 1084px) {

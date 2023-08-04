@@ -30,12 +30,11 @@
     
     }
 }
-@media (min-width: 768px) and (max-width: 1023px){
+@media (min-width: 769px) and (max-width: 1024px){
     .team-container .member-info{
         grid-template-columns: repeat(3,minmax(0,1fr));
         row-gap: 2rem;
-    justify-items: center;
-    
+        justify-items: center;
     }
     .team-main{
         padding:0 2rem ;

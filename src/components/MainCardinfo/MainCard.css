@@ -17,7 +17,6 @@
   .main-card-image {
     width: 100%;
     min-height:300px;
-    
     border-radius: 10px;
     object-fit: cover;
     display: block;
@@ -42,4 +41,8 @@
   
   }
   
-  
+@media (max-width: 768px) {
+  .main-card-image{
+    min-height: 243px;
+  }
+}
