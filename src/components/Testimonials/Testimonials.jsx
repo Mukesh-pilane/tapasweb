@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import Tanya from "../../assets/images/image-tanya.jpg";
 import John from "../../assets/images/image-john.jpg";
+import Vivek from '../../assets/images/Tesminonial-images/Vivek.jpg'
 import Next from "../../assets/images/icon-next.svg";
 import Prev from "../../assets/images/icon-prev.svg";
 import "./Testimonials.css";
@@ -13,13 +14,7 @@ export default function Testimonials() {
       id: 1,
       img: "../../assets/images/slide1.jpg",
       text:
-        `“Forming TAPAS was the best decision of my college days. Introducing a totally non-technical concept to a technical community was our biggest challenge. To add on to our challenges Principal Sir Dr. Sandeep Joshi Sir used to always present us with challenges. Living upto his expectations and proving that we are here to stay, we will leave behind a team which will sustain and carry forward our dream was our sheer pleasure. 
-        Learning everything from scratch about committee formation, documentation, responsibilities, leadership qualities, etc etc.....we had a complete personality development by the end. 
-        Winning the title "National Youth Ambassador" award by competing with 180+ colleges nationwide was a humbling experience. 
-        
-        Always grateful to pillars of TAPAS, Dr. Nivedita Shreyans ma'am and preceptor & mentor Prof. Madhura Vyavahare ma'am without whose guidance and encouragement we would have been lost. 
-        
-        Love to see TAPAS committee generations working hard bringing in peace to the campus. Their trips and other initiatives in colleges makes me immensely happy and proud. Proud of all the generations of TAPAS. Thank you for carrying forward our dream.”`,
+        `“Establishing TAPAS in a technical community reshaped my college journey. Overcoming challenges, we formed a dedicated team, achieving the "National Youth Ambassador" award. Guided by Dr. Nivedita Shreyans and Prof. Madhura Vyavahare, I'm proud to witness successive TAPAS generations thriving and continuing our dream through impactful campus initiatives”`,
       name: "Resmi Ramakrishnan",
       role: "Former TAPAS member",
       portrait: Tanya,
@@ -37,10 +32,10 @@ export default function Testimonials() {
       id: 3,
       img: "../../assets/images/slide3.jpg",
       text:
-        `“TAPAS has been a transformative experience in my college life. It's a remarkable committee that brought adventure, connections, and personal growth. The unique freedom within TAPAS allows seamless interaction with peers, juniors, seniors, and faculty. Collaborating with faculty for event planning enhances responsibility and decision-making skills. The connections made with people from various backgrounds become lasting through Heartfulness. My advice to future members is to actively participate, create memories, and seek support. TAPAS isn't just a committee; it's a family where connections thrive. ❤️”`,
+        `“TAPAS has profoundly shaped my college life, offering adventure, connections, and personal growth. Its exceptional freedom enables seamless peer and faculty interaction, while collaborative event planning hones decision-making skills. Heartfulness fosters lasting connections, transforming TAPAS into an enduring, supportive family rather than a mere committee. ❤️”`,
       name: "Vivek yadav",
-      role: "",
-      portrait: John,
+      role: "Former TAPAS president",
+      portrait: Vivek,
     }
   ];
 

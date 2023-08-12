@@ -3,8 +3,8 @@ import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import s1 from "../../assets/images/s1.jpg";
-import s2 from "../../assets/images/s2.jpg";
-import s3 from "../../assets/images/s3.jpg";
+import s2 from "../../assets/images/team/s2.jpg";
+import s3 from "../../assets/images/s2.jpg";
 import './TeamSlider.css'
 import { ArrowLeft,ArrowRight } from '../../assets/AllSvg';
 

@@ -16,11 +16,10 @@
   
   .main-card-image {
     width: 100%;
-    min-height:300px;
+    min-height:243px;
+    height: 300px;
     border-radius: 10px;
-    object-fit: cover;
     display: block;
-
   }
   
   .main-card-name {
