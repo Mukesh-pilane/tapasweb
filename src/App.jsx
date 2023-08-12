@@ -20,7 +20,7 @@ function App() {
     }, 2500);
   }, []);
 
-  const URL = import.meta.env.VITE_URL
+  const URL = import.meta.env.VITE_URL || "https://tapaspce.netlify.app"
 
   return (
     <div className="App">
@@ -32,11 +32,14 @@ function App() {
             <Navbar />
             <MobileNav />
             <Routes>
-              <Route index element={<Home />} />
-              <Route path={'/aboutus'} element={<Aboutus />} />
-              <Route path='/events' element={<Events />} />
-              <Route path="/contact" element={<Contactus />} />
-              <Route path="/team" element={<Team />} />
+              <Route path='/' element={<Home />} />
+              <Route 
+              path={'/aboutus'} 
+              exact
+              element={<Aboutus />} />
+              <Route path={'/events'} element={<Events />} />
+              <Route path={"/contact"} element={<Contactus />} />
+              <Route path={"/team"} element={<Team />} />
               <Route path="*" />
             </Routes>
             <Footer />

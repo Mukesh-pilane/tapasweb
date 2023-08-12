@@ -10,7 +10,8 @@ import { motion } from 'framer-motion'
 const MobileNav = () => {
   const location = useLocation();
   const [isScrolled, setIsScrolled] = useState(true);
-  const URL = import.meta.env.VITE_URL
+  const URL = import.meta.env.VITE_URL || "https://tapaspce.netlify.app"
+
   console.log(URL);
   useEffect(() => {
     const handleScroll = () => {
