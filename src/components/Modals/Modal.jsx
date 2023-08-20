@@ -31,7 +31,6 @@ const AnimatedDialog = ({ isOpen, onClose, link }) => {
               
             }} 
           >
-              {console.log(link)}
 
             <ReactPlayer
             config={{
