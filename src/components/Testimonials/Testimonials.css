@@ -4,7 +4,7 @@
 }
 
 .Testimonial{
-  padding:0rem 4rem 9rem 4rem;
+  padding:0rem 4rem 8rem 4rem;
 }
 
 .Testimonials {
@@ -94,7 +94,7 @@
     margin-bottom: 1rem;
   }
   .Testimonials .testimonial {
-    background-position: left 22% top 78%;
+    background-position: left 22% top 48%;
     background-size: 120px 100px;
     height: 220px;
     margin-right: -9rem;
@@ -115,10 +115,14 @@
     font-size: 24px;
     line-height: 36px;
     margin-bottom: 35px;
+    margin-top:-48px
   }
 
   .Testimonials .name {
     font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .Testimonials .portrait {
@@ -211,7 +215,8 @@
 
 @media (max-width: 767px) {
   .Testimonial{
-    padding: 2rem
+    padding: 2rem;
+  margin-bottom:7rem;
   }
   .Testimonials {
     background-size: 200px;

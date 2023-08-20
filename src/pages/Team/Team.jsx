@@ -6,10 +6,10 @@ import Susmit from '../../assets/images/team/Susmit.jpg'
 import Sahil from '../../assets/images/team/Sahil.jpg'
 import Shraddha from '../../assets/images/team/Shradha.jpg'
 import Vignesh from '../../assets/images/team/Vignesh.jpg'
-import Ajay from '../../assets/images/team/Ajay.jpg'
 import Shweta from '../../assets/images/team/Shweta.jpg'
 import Komal from '../../assets/images/team/Komal.jpg'
-
+import ketaki from '../../assets/images/team/IMG_20230803_100859.jpg'
+import Ajay from '../../assets/images/team/IMG_20230803_101241.jpg'
 import "./Team.css"
 
 const Team = () => {
@@ -40,7 +40,7 @@ const Team = () => {
       position="Creative head"
     /><MainCard
     name="Ketaki"
-    imageUrl="https://randomuser.me/api/portraits/women/44.jpg"
+    imageUrl={ketaki}
     position="Publicity head"
   /><MainCard
   name="Vignesh"
