@@ -1,0 +1,38 @@
+.Event-main{
+    padding: 2rem 4rem;
+}
+.Event-container {
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 20px;
+}
+.Event-container .event-info,.event-info2{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 5rem;
+    margin: 2rem 0;
+    gap: 20px;
+  
+    
+}
+.Event-container > h1{
+
+    font-family: SoDoSans_Semibold,Helvetica,sans-serif;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+@media (max-width: 850px) {
+ 
+    .Event-container h1{
+        font-size: 2rem;
+    }
+    .Event-main{
+        padding: 0 2rem;
+    }
+    .Event-container .event-info,.event-info2{
+        padding: 0 1rem;
+    }
+}

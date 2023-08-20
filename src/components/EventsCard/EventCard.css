@@ -1,0 +1,107 @@
+.events-card-container-main{
+display: flex;
+justify-content: space-around;
+align-items: center;
+max-width: 800px;
+box-shadow: rgba(0, 0, 0, 0.285) 0px 7px 21px 0px;
+border: 1.5px solid ;
+    border-color:  rgba(113, 71, 238, 0.175);
+    border-radius: 10px;
+}
+.events-card-container-main .event-date-container{
+width: 15%;
+max-height: 400px;
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+.events-card-container-main .event-info-container{
+    width: 60%;
+    max-height: 400px;
+    margin-left: -12px;
+    }
+  
+    .events-card-container-main .event-info-container>h4{
+        font-family: SoDoSans_bold,Helvetica,sans-serif;
+        font-size: 1.2rem;
+
+    }
+    .events-card-container-main .event-info-container>h3{
+        font-family: SoDoSans_Light,Helvetica,sans-serif;
+        padding-bottom: 7px;
+        font-size: 0.9rem;
+    }
+    .events-card-container-main .event-date-container  .event-date-background{
+        padding: 7px 30px;
+        border-radius: 20px;
+        display: flex;
+flex-direction: column;
+align-items: center;
+color: white;
+    }
+    .events-card-container-main .event-date-container  .event-date-background  .event-date-day{
+font-size: 2rem;
+font-family: SoDoSans_Semibold,Helvetica,sans-serif;
+    }
+    .events-card-container-main .event-date-container  .event-date-background  .event-date-month{
+        text-transform: uppercase;
+    }
+
+    .events-card-container-main   .event-register-button >button{
+        
+            background-color: #000000;
+            font-size: 17px;
+            font-family: SoDoSans_Semibold,Helvetica,sans-serif;
+            line-height: 118%;
+            letter-spacing: 0.5px;
+            cursor: pointer;
+            color: rgb(255, 255, 255);
+            align-items: center;
+            border-radius: 8px;
+            cursor: pointer;
+            border: none;
+            display: flex;
+            margin-bottom: 48px;
+            margin-top: 32px;
+            padding: 10px 20px;
+            width: -webkit-fit-content;
+            width: -moz-fit-content;
+            width: fit-content;
+        
+    }
+
+
+    @media (max-width: 850px) {
+        .events-card-container-main{
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 1rem 0;
+        }
+       
+        .events-card-container-main .event-date-container{
+            width: 100%;
+        }
+        .events-card-container-main .event-info-container {
+        margin: unset;
+        width: 100%;
+        padding: 10px 5px;
+        text-align: center;
+        }
+        .events-card-container-main .event-register-button{
+            height: 80px;
+            margin-top: -20px;
+            margin-bottom: -10px;
+        }
+        .events-card-container-main .event-info-container>h4{
+            font-size: 1rem;
+        }
+        .events-card-container-main .event-info-container>h3{
+            font-size: 0.7rem;
+        }
+        .events-card-container-main .event-info-container >p {
+            max-width: 100%;
+            padding: 0 5px;
+            font-size: 0.8rem;
+        }
+      }
