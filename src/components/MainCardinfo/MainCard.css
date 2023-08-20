@@ -2,7 +2,7 @@
     text-align: center;
     border-radius: 12px;
     overflow: hidden;
-
+    width: 100%;
     box-shadow: 0 4px 8px rgba(113, 71, 238, 0.175);
   }
 
@@ -17,10 +17,9 @@
   .main-card-image {
     width: 100%;
     min-height:300px;
+    height: 300px;
     border-radius: 10px;
-    object-fit: cover;
     display: block;
-
   }
   
   .main-card-name {
@@ -44,5 +43,12 @@
 @media (max-width: 768px) {
   .main-card-image{
     min-height: 243px;
+  }
+}
+
+
+@media (max-width: 488px) {
+  .main-card{
+    width: 80%;
   }
 }

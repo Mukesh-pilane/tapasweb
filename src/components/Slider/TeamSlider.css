@@ -23,6 +23,7 @@
 .Team__slider-imgContainer > img{
     width: 100%;
     height: 100%;
+    object-fit: cover;
 }
 
 .Team__slider-carousel-arrow {
