@@ -43,8 +43,12 @@ const HomeEvent = () => {
           <img src={Data.img} alt={Data.title} />
         </div>
         <div className="homeEventCard__infoContainer">
-          <h2 className="homeEventCard__infoContainer-title">{Data.title}</h2>
+        <div className="homeEventCard__infoContainer_group">
+        <h2 className="homeEventCard__infoContainer-title">{Data.title}</h2>
           <p className="homeEventCard__infoContainer-discription">{Data.description}</p>
+        </div>
+
+        
           <div className="homeEventCard__infoContainer-btn">
             <button>See more events</button>
           </div>
@@ -56,6 +60,8 @@ const HomeEvent = () => {
   const settings = {
     dots: false,
     infinite: true,
+    autoplay: true,
+    autoplaySpeed: 2000,
     fade:true,
     speed: 500,
     arrows: false,
@@ -63,6 +69,7 @@ const HomeEvent = () => {
     slidesToShow: 1,
     slidesToScroll: 1,
     pauseOnHover: true,
+  
   };
 
   return (

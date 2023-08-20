@@ -39,7 +39,9 @@
     /* background-image: linear-gradient(to bottom,#ce9ffc 10%, #6e66bd); */
     background-color: #6e66bd;
     color: #fff;
-    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
 }
 
 .homeEventCard__infoContainer-title{
@@ -54,23 +56,15 @@
 }
 
 .homeEventCard__infoContainer-btn{
-    width: calc(100% - 64px);
-    position: absolute;
-    bottom: 32px;
+   display: flex;
+   justify-content: center;
+
 }
 
 .homeEventCard__infoContainer-btn > button{
-    padding: 10px 30px;
-    border-radius: 5px;
-    border: solid 1px #fff;
-    outline: none;
-    font-size: 1em;
-    font-weight: 500;
-    width: 100%;
-    /* background: linear-gradient(135deg,#ce9ffc 10%, #7367f0); */
-    background: transparent;
-    color: #fff;
+   border: none;
     cursor: pointer;
+    font-family: 'SoDoSans_Light';
 }
 
 @media (max-width: 1024px) {

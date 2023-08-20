@@ -53,7 +53,7 @@
     padding-right: 16px;
   }
 
-  .join-our-team-container   .join-button{
+  .join-our-team-container   .join-button,.homeEventCard__infoContainer-btn > button{
     background-color: #000000;
     font-size: 17px;
     line-height: 118%;
