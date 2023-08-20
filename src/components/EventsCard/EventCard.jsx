@@ -2,7 +2,7 @@ import React from "react";
 import "./EventCard.css"
 
 
-const EventCard = ({ name, subtitle, description, date, dateBackgroundColor  }) => {
+const EventCard = ({ name, subtitle, description, date, dateBackgroundColor, images  }) => {
     const eventDate = new Date(date);
     const currentDate = new Date();
 

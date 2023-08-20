@@ -5,7 +5,7 @@ import {AiOutlineClose} from "react-icons/ai"
 import "./eventsmodal.css"
 
 
-const EventsModal = ({ isOpen, onClose, data}) => {
+const EventsModal = ({ isOpen, onClose,data}) => {
   return (
     <AnimatePresence>
     {isOpen && (
@@ -29,6 +29,7 @@ const EventsModal = ({ isOpen, onClose, data}) => {
           transition={{ duration: 0.3 }}
           className='modal'
           style={{
+            
           }} 
         >
         </motion.div>
