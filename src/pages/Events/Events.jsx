@@ -1,21 +1,9 @@
 import React, {useState} from 'react'
-import EventsModal from '../../components/Modals/EventsModal'
 
 import EventCard from '../../components/EventsCard/EventCard';
 import "./Events.css"
+import practices from '../../data/dailypractices';
 
-
-// const Events = () => {
-//  
-//   return (
-//     <>
-//     <button onClick={openDialog}>open up</button>
-//     <EventsModal isOpen={isOpen} onClose={closeDialog} />
-//     </>
-//   )
-// }
-
-// export default Events
 
 const Events = () => {
     const EventUpcomingData = [
@@ -47,21 +35,26 @@ const Events = () => {
             subtitle: "Exploring Effective Mediation Techniques",
             description: "Join us for a webinar on proven mediation strategies for resolving conflicts.",
             date: "10 Jun 2023",
-            dateBackgroundColor: "#FF5733"
+            dateBackgroundColor: "#FF5733",
+            images : practices[0].slides
         },
         {
             name: "Mediation Workshop",
             subtitle: "Mastering Conflict Resolution",
             description: "An interactive workshop focusing on practical mediation skills and case studies.",
             date: "18 Mar 2023",
-            dateBackgroundColor: "#2ECC71"
+            dateBackgroundColor: "#2ECC71",
+            images : practices[0].slides
+
         },
         {
             name: "Mediation Seminar",
             subtitle: "Insights into Modern Mediation Practices",
             description: "A seminar discussing the evolution of mediation methods and their real-world applications.",
             date: "05 Feb 2023",
-            dateBackgroundColor: "#3498DB"
+            dateBackgroundColor: "#3498DB",
+            images : [practices[0].slides]
+
         }
     ];
 
@@ -95,6 +88,7 @@ const Events = () => {
                             description={event.description}
                             date={event.date}
                             dateBackgroundColor={event.dateBackgroundColor}
+                            images={event.images[0]}
                         />
                     ))}
                     </div>

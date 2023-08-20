@@ -49,11 +49,13 @@ const SliderModal = ({ isOpen, onClose, slides }) => {
               )
             }
             >
-            {slides.map((slide, index)  => (
-                <div className="slider-modal-container" key={index}>
+            {slides.map((slide, index)  => {
+              console.log(slide);
+               return( <div className="slider-modal-container" key={index}>
                     <img key={index} src={slide} alt={`Slide ${index}`} />
                 </div>
-              ))}
+               )
+})}
             </Carousel> 
           </motion.div>
           </motion.div>

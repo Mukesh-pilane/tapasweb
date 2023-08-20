@@ -1,11 +1,19 @@
-import React from "react";
+import React, {useState} from "react";
+import EventsModal from '../../components/Modals/EventsModal'
+
 import "./EventCard.css"
 
 
 const EventCard = ({ name, subtitle, description, date, dateBackgroundColor, images  }) => {
+    const [isOpen, setIsOpen] = useState(false);
+    const openDialog = () => {
+        setIsOpen(true);
+    };
+    const closeDialog = () => {
+        setIsOpen(false);
+    };
     const eventDate = new Date(date);
     const currentDate = new Date();
-
 
     // Extract day, month, and year from the Date object
     const eventDay = eventDate.getDate();
@@ -16,7 +24,10 @@ const EventCard = ({ name, subtitle, description, date, dateBackgroundColor, ima
     };
     const isPastEvent = eventDate < currentDate;
     const buttonText = isPastEvent ? "Know More" : "Register";
+
+
     return (
+        <>
         <article className="events-card-container-main">
             <div className="event-date-container">
                 <div className="event-date-background" style={dateBackgroundStyle}>
@@ -39,9 +50,11 @@ const EventCard = ({ name, subtitle, description, date, dateBackgroundColor, ima
                 
             </div>
             <div className="event-register-button">
-            <button>{buttonText}</button>
+            <button onClick={isPastEvent ? openDialog : null}>{buttonText}</button>
             </div>
+          <EventsModal isOpen={isOpen} onClose={closeDialog} images={images}/>
         </article>
+        </>
     );
 };
 
