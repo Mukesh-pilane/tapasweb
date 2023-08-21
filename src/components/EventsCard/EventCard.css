@@ -82,6 +82,7 @@ font-family: SoDoSans_Semibold,Helvetica,sans-serif;
             align-items: center;
             flex-direction: column;
             padding: 1rem 0;
+            width: 100%;
         }
        
         .events-card-container-main .event-date-container{
