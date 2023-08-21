@@ -11,6 +11,7 @@
 }
 
 
+
 .img-info{
   position: absolute;
     padding: 4rem;
@@ -149,6 +150,9 @@ transform: scale(1.05);
   .hero-slider .scroll-section{
     display: none;
   } 
+  .hero-slider .slick-slider{
+    background-color: #F8E8EE;
+  }
   
 }
 

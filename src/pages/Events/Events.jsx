@@ -74,6 +74,7 @@ const Events = () => {
                             description={event.description}
                             date={event.date}
                             dateBackgroundColor={event.dateBackgroundColor}
+                            
                         />
                     ))}
                     

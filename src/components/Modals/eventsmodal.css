@@ -1,0 +1,11 @@
+.EventSlider{
+    display: flex !important;
+    justify-content:center;
+    height: 100%;
+    position: relative;
+}
+
+.EventSlider img{
+    width: 60%;
+    height: 100%;
+}

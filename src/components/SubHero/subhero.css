@@ -207,3 +207,9 @@ transform: scale(1.1);
   width: 100%;
 }
 }
+
+@media (max-width:393px) {
+  .sub-hero-heading{
+    font-size: 1.3rem;
+  }
+}

@@ -62,9 +62,21 @@
 }
 
 .homeEventCard__infoContainer-btn > button{
-   border: none;
+    background-color: #000000;
+    font-size: 17px;
+    line-height: 118%;
+    letter-spacing: 0.5px;
     cursor: pointer;
-    font-family: 'SoDoSans_Light';
+    color: rgb(255, 255, 255);
+    align-items: center;
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    margin-top: 32px;
+    padding: 14px 20px;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
 }
 
 @media (max-width: 1024px) {
@@ -104,6 +116,6 @@
 
 @media (max-width: 768px) {
 .homeEventCard__imgContainer{
-    height: 300px;
+    height: 400px;
 }
 }
