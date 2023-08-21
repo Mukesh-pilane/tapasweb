@@ -109,6 +109,21 @@
     }
   }
 
+  @media (max-width:400px) {
+    .slide-modal{
+        padding:0
+    }
+    .slider-modal-container img{
+        width: 100% !important;
+        height: 80% !important;
+    }
+
+    .control-dots{
+        display: none !important;
+    }
+  }
+
+
   .slide-modal .thumbs-wrapper .control-arrow::after, .slide-modal .thumbs-wrapper .control-arrow::before{
     display: none !important;
   }
