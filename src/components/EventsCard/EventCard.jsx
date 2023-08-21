@@ -47,7 +47,6 @@ const EventCard = ({ name, subtitle, description, date, dateBackgroundColor, ima
                 <h4>{name}</h4>
                 <h3>{subtitle}</h3>
                 <p>{description}</p>
-                
             </div>
             <div className="event-register-button">
             <button onClick={isPastEvent ? openDialog : null}>{buttonText}</button>

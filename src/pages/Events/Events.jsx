@@ -53,7 +53,7 @@ const Events = () => {
             description: "A seminar discussing the evolution of mediation methods and their real-world applications.",
             date: "05 Feb 2023",
             dateBackgroundColor: "#3498DB",
-            images : [practices[0].slides]
+            images : practices[0].slides
 
         }
     ];
@@ -89,7 +89,7 @@ const Events = () => {
                             description={event.description}
                             date={event.date}
                             dateBackgroundColor={event.dateBackgroundColor}
-                            images={event.images[0]}
+                            images={event.images}
                         />
                     ))}
                     </div>

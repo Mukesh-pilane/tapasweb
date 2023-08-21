@@ -16,7 +16,9 @@
     height: 100%
 }
 
-
+.carousel  .control-dots{
+    display: none !important;
+}
 .slider-modal-container{
     display: flex;
     justify-content: center;
@@ -128,4 +130,3 @@
     display: none !important;
   }
 
- 
