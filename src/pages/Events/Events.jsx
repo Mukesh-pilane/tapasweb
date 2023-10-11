@@ -48,7 +48,7 @@ const Events = () => {
         {
             name: "Dhyanratri 2023",
             subtitle: "Master the Art of Conflict Resolution",
-            description: `TAPAS-PCE is back with Dhyanratri 2023,  a 9 days journey to nurture your mind, body and soul.Incorporating meditation into your Navratri observance can deepen your connection with yourself, find mental clarity and help you navigate the festivities with greater mindfulness and devotion.`,
+            description: `TAPAS-PCE is back with Dhyanratri 2023,  a 9 days journey to nurture your mind, body and soul. Incorporating meditation into your Navratri observance can deepen your connection with yourself, find mental clarity and help you navigate the festivities with greater mindfulness and devotion.`,
             date: "15 oct 2023",
             dateBackgroundColor: "#FF5733",
             link: "https://forms.gle/yEUSVmhyAcvpciTx7"
@@ -63,7 +63,23 @@ const Events = () => {
         //     dateBackgroundColor: "#FF5733",
         //     images : practices[0].slides
         // },
-        
+        {
+            name: "Kanha",
+            subtitle: "Mastering Conflict Resolution",
+            description: `On August 11, 2022, participants arrived at Kanha Shanti Vanam for a conference featuring meditation, inspirational talks, and workshops focused on self-kindness and its societal impact`,
+            date: "12 Aug 2023",
+            dateBackgroundColor: "#FF5733",
+            images : [kanha0, kanha1, kanha2, kanha3, kanha4, kanha5, kanha6, kanha7, kanha8]
+
+        },
+        {
+            name: "Yoga for Humanity",
+            subtitle: "Mastering Conflict Resolution",
+            description: `TAPAS-PCE celebrated International Yoga Day with a session led by Dr. Shridevi Kulkarni and Deepali Ma'am, emphasizing yoga's physical and mental well-being benefits and recognizing outstanding participants and instructors.`,
+            date: "21 june 2023",
+            dateBackgroundColor: "#BEADFA",
+            images : [yogaDay0, yogaDay1, yogaDay2, yogaDay3, yogaDay4, yogaDay5]
+        },
         {
             name: "21 Days Meditation Challenge 2023",
             subtitle: "Insights into Modern Mediation Practices",
@@ -75,6 +91,15 @@ const Events = () => {
 
         },
         {
+            name: "Dhyanotsav 2022",
+            subtitle: "Mastering Conflict Resolution",
+            description: `TAPAS-PCE's Dhyanotsav 2022 event, guided by several mentors, introduced first-year students to meditation's benefits, with relaxation sessions, guided meditation, and insightful speeches, concluding with goody bags from Pillai College.`,
+            date: "27 Sept 2022",
+            dateBackgroundColor: "#6499E9",
+            images : [dhyanotsav0, dhyanotsav1, dhyanotsav2, dhyanotsav3, dhyanotsav4]
+        },
+
+        {
             name: "Dhyanratri",
             subtitle: "Mastering Conflict Resolution",
             description: "TAPAS-PCE launched the Dhyanratri event in September 2022, a 9-day meditation drive during Navratri from 26 September to 4 October 2022.",
@@ -83,32 +108,8 @@ const Events = () => {
             images : [maindhyanratri, dhyanratri1, dhyanratri2, dhyanratri3, dhyanratri4]
 
         },
-        {
-            name: "Kanha",
-            subtitle: "Mastering Conflict Resolution",
-            description: `On August 11, 2022, participants arrived at Kanha Shanti Vanam for a conference featuring meditation, inspirational talks, and workshops focused on self-kindness and its societal impact`,
-            date: "12 Aug 2023",
-            dateBackgroundColor: "#FF5733",
-            images : [kanha0, kanha1, kanha2, kanha3, kanha4, kanha5, kanha6, kanha7, kanha8]
-
-        },
-        {
-            name: "Dhyanotsav 2022",
-            subtitle: "Mastering Conflict Resolution",
-            description: `TAPAS-PCE's Dhyanotsav 2022 event, guided by several mentors, introduced first-year students to meditation's benefits, with relaxation sessions, guided meditation, and insightful speeches, concluding with goody bags from Pillai College.`,
-            date: "27 Sept 2022",
-            dateBackgroundColor: "#6499E9",
-            images : [dhyanotsav0, dhyanotsav1, dhyanotsav2, dhyanotsav3, dhyanotsav4]
-        },
-        {
-            name: "Yoga for Humanity",
-            subtitle: "Mastering Conflict Resolution",
-            description: `TAPAS-PCE celebrated International Yoga Day with a session led by Dr. Shridevi Kulkarni and Deepali Ma'am, emphasizing yoga's physical and mental well-being benefits and recognizing outstanding participants and instructors.`,
-            date: "21 june 2023",
-            dateBackgroundColor: "#BEADFA",
-            images : [yogaDay0, yogaDay1, yogaDay2, yogaDay3, yogaDay4, yogaDay5]
-
-        }
+        
+        
     ];
 
 
