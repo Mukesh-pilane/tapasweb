@@ -43,7 +43,7 @@ import yogaDay5 from '../../assets/images/Events/Eventspage/yogaDay5.jpg';
 
 
 
-const Events = () => {
+const Events = () => { 
     const EventUpcomingData = [
         {
             name: "Dhyanratri 2023",
