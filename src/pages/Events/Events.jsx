@@ -34,12 +34,12 @@ import dhyanotsav2 from '../../assets/images/Events/Eventspage/dhyanotsav2.webp'
 import dhyanotsav3 from '../../assets/images/Events/Eventspage/dhyanotsav3.webp';
 import dhyanotsav4 from '../../assets/images/Events/Eventspage/dhyanotsav4.webp';
 
-import yogaDay0 from '../../assets/images/Events/Eventspage/yogaDay0.jpg';
-import yogaDay1 from '../../assets/images/Events/Eventspage/yogaDay1.jpg';
-import yogaDay2 from '../../assets/images/Events/Eventspage/yogaDay2.jpg';
-import yogaDay3 from '../../assets/images/Events/Eventspage/yogaDay3.jpg';
-import yogaDay4 from '../../assets/images/Events/Eventspage/yogaDay4.jpg';
-import yogaDay5 from '../../assets/images/Events/Eventspage/yogaDay5.jpg';
+import yogaDay0 from '../../assets/images/Events/Eventspage/YogaDay0.jpg';
+import yogaDay1 from '../../assets/images/Events/Eventspage/YogaDay1.jpg';
+import yogaDay2 from '../../assets/images/Events/Eventspage/YogaDay2.jpg';
+import yogaDay3 from '../../assets/images/Events/Eventspage/YogaDay3.jpg';
+import yogaDay4 from '../../assets/images/Events/Eventspage/YogaDay4.jpg';
+import yogaDay5 from '../../assets/images/Events/Eventspage/YogaDay5.jpg';
 
 
 
