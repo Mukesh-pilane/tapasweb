@@ -2,11 +2,12 @@ import React, { useState, useRef } from 'react';
 import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import {Link} from "react-router-dom"
 import "./HomeEvent.css";
-import event1 from '../../assets/images/slide1.jpg';
-import event2 from '../../assets/images/slide2.jpg';
-import event3 from '../../assets/images/slide3.jpg';
-import event4 from '../../assets/images/slide4.jpg';
+import event1 from '../../assets/images/Events/HomeEvents/kanha.webp';
+import event2 from '../../assets/images/Events/HomeEvents/dhyanotsav.webp';
+import event3 from '../../assets/images/Events/HomeEvents/21Days.webp';
+import event4 from '../../assets/images/Events/HomeEvents/dhyanratri.webp';
 
 const HomeEvent = () => {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -50,7 +51,7 @@ const HomeEvent = () => {
 
         
           <div className="homeEventCard__infoContainer-btn">
-            <button>See more events</button>
+            <button><Link to={`/events`}>See more events</Link></button>
           </div>
         </div>
       </div>

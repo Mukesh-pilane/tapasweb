@@ -78,6 +78,11 @@
     width: -moz-fit-content;
     width: fit-content;
 }
+ 
+.homeEventCard__infoContainer-btn a {
+    text-decoration: none;
+    color:  #fff;
+  }
 
 @media (max-width: 1024px) {
     .homeEvent{
