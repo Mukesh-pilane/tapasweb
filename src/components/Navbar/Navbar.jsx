@@ -4,7 +4,6 @@ import logo from '../../assets/images/logo.png';
 import { Link, useNavigate } from 'react-router-dom';
 
 const Navbar = () => {
-  const URL = import.meta.env.VITE_URL
 
   const navigate = useNavigate();
   return (
@@ -14,10 +13,10 @@ const Navbar = () => {
         <img src={logo} alt="Logo" onClick={() => navigate("/")} />
       </div>
       <ul className="navbar-links">
-        <li className="navbar-link"><Link to={`${URL}/aboutus`}>About</Link></li>
-        <li className="navbar-link"><Link to={`${URL}/events`}>Events</Link></li>
-        <li className="navbar-link"><Link to={`${URL}/team`}>Team</Link></li>
-        <li className="navbar-link"><Link to={`${URL}/contact`}>Contact</Link></li>
+        <li className="navbar-link"><Link to={`/aboutus`}>About</Link></li>
+        <li className="navbar-link"><Link to={`/events`}>Events</Link></li>
+        <li className="navbar-link"><Link to={`/team`}>Team</Link></li>
+        <li className="navbar-link"><Link to={`/contact`}>Contact</Link></li>
       </ul>
       </div>
 

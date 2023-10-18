@@ -55,14 +55,6 @@ const Events = () => {
         },
     ];
     const EventPastData = [
-        // {
-        //     name: "Meditation Session at College",
-        //     subtitle: "Exploring Effective Mediation Techniques",
-        //     description: "On February 5th, TAPAS-PCE and Heartfulness led a meditation session at Pillai College, promoting emotional well-being for 150 participants and featuring youth-related discussions.",
-        //     date: "5 Feb 2023",
-        //     dateBackgroundColor: "#FF5733",
-        //     images : practices[0].slides
-        // },
         {
             name: "Kanha",
             subtitle: "Mastering Conflict Resolution",

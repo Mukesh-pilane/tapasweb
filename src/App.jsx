@@ -20,7 +20,6 @@ function App() {
     }, 2500);
   }, []);
 
-  const URL = import.meta.env.VITE_URL || "https://tapaspce.netlify.app"
 
   return (
     <div className="App">
